@@ -2,6 +2,10 @@
 
 ## Cours
 
+[Slides](pathname:///slide/?id=introduction)
+
+[Slides pour impression](pathname:///slide/?id=introduction&print-pdf)
+
 ## Exercices
 
 - Lire le [manifeste agile](https://agilemanifesto.org/iso/fr/manifesto.html) ainsi que ses [12 principes](https://agilemanifesto.org/iso/fr/principles.html)

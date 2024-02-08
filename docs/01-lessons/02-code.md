@@ -8,6 +8,10 @@
 
 ## Cours
 
+[Slides](pathname:///slide/?id=code)
+
+[Slides pour impression](pathname:///slide/?id=code&print-pdf)
+
 ## Références
 
 - https://www.atlassian.com/git/tutorials/rewriting-history
