@@ -30,9 +30,10 @@
 }
 
 div.reveal {
-  height: 512px;
+  --r-heading-text-transform: none;
   border: 1px solid var(--docusaurus-highlighted-code-line-bg);
 
+  height: 512px;
   @media (max-width: 910px) {
     height: 256px;
   }

@@ -2,11 +2,11 @@
 
 | Date (vendredi) | Semaine | Cours (13:15 - 14:45)                                                 | Laboratoires (14:55 - 16:30) |
 | :-------------: | :-----: | --------------------------------------------------------------------- | ---------------------------- |
-|   2024-02-23    |   01    | [Introduction](docs/lessons/introduction) + [Code](docs/lessons/code) | [Outils](docs/labs/tools)    |
-|   2024-03-01    |   02    |                                                                       | [Docker](docs/labs/docker)   |
-|   2024-03-08    |   03    |                                                                       |                              |
-|   2024-03-15    |   04    |                                                                       |                              |
-|   2024-03-22    |   05    | **Test** (45')                                                        |                              |
+|   2024-02-23    |   01    | [Introduction](docs/lessons/intro) + [Code](docs/lessons/code)        | [Outils](docs/labs/tools)    |
+|   2024-03-01    |   02    | [Artéfact](docs/lessons/artifact) + [Développement](docs/lessons/dev) | [Docker](docs/labs/docker)   |
+|   2024-03-08    |   03    | [Test automatisé](docs/lessons/test)                                  | [Compose](docs/labs/compose) |
+|   2024-03-15    |   04    | [CI/CD](docs/lessons/cicd)                                            | [CI/CD](docs/labs/cicd)      |
+|   2024-03-22    |   05    | **Test** (45')                                                        | [CI/CD](docs/labs/cicd)      |
 |   2024-03-29    |   06    | _Vendredi saint_                                                      | _Vendredi saint_             |
 |   2024-04-05    |         | _Vacances_                                                            | _Vacances_                   |
 |   2024-04-12    |   07    |                                                                       |                              |

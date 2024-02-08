@@ -2,7 +2,7 @@
 
 ## Cours
 
-<Reaveal id="introduction" />
+<Reaveal id="intro" />
 
 ## Exercices
 
