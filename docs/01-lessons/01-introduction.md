@@ -2,9 +2,7 @@
 
 ## Cours
 
-[Slides](pathname:///slide/?id=introduction)
-
-[Slides pour impression](pathname:///slide/?id=introduction&print-pdf)
+<Reaveal id="introduction" />
 
 ## Exercices
 

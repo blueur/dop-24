@@ -8,9 +8,7 @@
 
 ## Cours
 
-[Slides](pathname:///slide/?id=code)
-
-[Slides pour impression](pathname:///slide/?id=code&print-pdf)
+<Reaveal id="code" />
 
 ## Références
 
