@@ -1,3 +1,11 @@
+---
+title: ""
+---
+
+# DevOps
+
+Cours de DevOps à la [HEIG-VD](https://heig-vd.ch).
+
 ## Calendrier
 
 | Date (vendredi) | Semaine | Cours (13:15 - 14:45)                                                 | Laboratoires (14:55 - 16:30) |

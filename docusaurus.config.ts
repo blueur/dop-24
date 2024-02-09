@@ -4,18 +4,10 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "DevOps",
-  tagline: "Dinosaurs are cool",
   favicon: "img/favicon.ico",
 
   url: "https://dop.davidtang.ch",
   baseUrl: "/",
-
-  // GitHub pages deployment config.
-  organizationName: "blueur",
-  projectName: "dop",
-
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
 
   i18n: {
     defaultLocale: "fr",
@@ -59,7 +51,7 @@ const config: Config = {
         },
         {
           type: "dropdown",
-          label: "Liens",
+          label: "Contact",
           position: "right",
           items: [
             {
