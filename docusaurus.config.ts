@@ -50,32 +50,29 @@ const config: Config = {
           position: "left",
         },
         {
-          type: "dropdown",
-          label: "Contact",
+          href: "https://github.com/blueur",
           position: "right",
-          items: [
-            {
-              label: "GitHub",
-              href: "https://github.com/blueur",
-            },
-            {
-              label: "GitLab",
-              href: "https://gitlab.com/blueur",
-            },
-            {
-              label: "LinkedIn",
-              href: "https://www.linkedin.com/in/davidtangch/",
-            },
-            {
-              label: "Email",
-              href: "mailto:david.tang@heig-vd.ch",
-            },
-          ],
+          className: "ph ph-github-logo",
+        },
+        {
+          href: "https://gitlab.com/blueur",
+          position: "right",
+          className: "ph ph-gitlab-logo-simple",
+        },
+        {
+          href: "https://www.linkedin.com/in/davidtangch/",
+          position: "right",
+          className: "ph ph-linkedin-logo",
+        },
+        {
+          href: "mailto:david.tang@heig-vd.ch",
+          position: "right",
+          className: "ph ph-envelope-simple",
         },
       ],
     },
     footer: {
-      copyright: `<p xmlns:cc="http://creativecommons.org/ns#" >This work © ${new Date().getFullYear()} by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://davidtang.ch" target="_blank">David Tang</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>`,
+      copyright: `<p xmlns:cc="http://creativecommons.org/ns#" >This work © 2023-${new Date().getFullYear()} by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://davidtang.ch" target="_blank">David Tang</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>`,
     },
     docs: {
       sidebar: {
@@ -83,8 +80,8 @@ const config: Config = {
       },
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: prismThemes.oneLight,
+      darkTheme: prismThemes.oneDark,
     },
   } satisfies Preset.ThemeConfig,
 };
