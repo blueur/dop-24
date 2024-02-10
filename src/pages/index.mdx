@@ -1,0 +1,42 @@
+---
+title: ""
+---
+
+# DevOps
+
+Cours de DevOps à la [HEIG-VD](https://heig-vd.ch).
+
+## Calendrier
+
+import React from "react";
+import Calendar from "./_calendar.mdx";
+
+export class CurrentCalendar extends React.Component {
+  componentDidMount() {
+    const date = new Date();
+    const day = date.getDay();
+    const currentDate = new Date(
+      date.setDate(date.getDate() - day + (day === 0 ? -2 : 5))
+    );
+    const dateText = currentDate.toISOString().split("T")[0];
+    const weekend = day === 0 || day === 6;
+    Array.from(document.querySelectorAll("td"))
+      .filter((a) => a.textContent === dateText)
+      .forEach((element) => {
+        const parent = element.parentElement;
+        parent.classList.add("current", weekend ? "weekend" : "week");
+        parent.scrollIntoView({ behavior: "smooth" });
+      });
+  }
+  render() {
+    return <Calendar />;
+  }
+}
+
+<CurrentCalendar />
+
+## Liens
+
+- [Cyberlearn](https://cyberlearn.hes-so.ch/course/view.php?id=19885)
+- [Fiche d'unité](https://gaps.heig-vd.ch/public/fiches/uv/uv.php?id=7181)
+- [Calendrier académique](https://heig-vd.ch/formation/bachelor/calendrier-academique)

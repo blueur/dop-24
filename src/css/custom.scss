@@ -38,12 +38,23 @@ div.reveal {
 
   --r-heading-text-transform: none;
 
+  strong {
+    color: var(--ifm-color-primary);
+  }
+
   .reference {
     font-size: small;
   }
+}
 
-  strong {
-    color: var(--ifm-color-primary);
+.current {
+  scroll-margin-top: 32em;
+  &.week {
+    border-left: 2px solid var(--ifm-color-primary);
+    border-right: 2px solid var(--ifm-color-primary);
+  }
+  &.weekend {
+    border-bottom: 2px solid var(--ifm-color-primary);
   }
 }
 
