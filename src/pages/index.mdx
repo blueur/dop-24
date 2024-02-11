@@ -16,7 +16,7 @@ export class CurrentCalendar extends React.Component {
     const date = new Date();
     const day = date.getDay();
     const currentDate = new Date(
-      date.setDate(date.getDate() - day + (day === 0 ? -2 : 5))
+      date.setDate(date.getDate() - day + (day === 0 ? -2 : 5)),
     );
     const dateText = currentDate.toISOString().split("T")[0];
     const weekend = day === 0 || day === 6;

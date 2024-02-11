@@ -1,6 +1,6 @@
-import { themes as prismThemes } from "prism-react-renderer";
-import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import type { Config } from "@docusaurus/types";
+import { themes as prismThemes } from "prism-react-renderer";
 
 const config: Config = {
   title: "DevOps",
@@ -41,12 +41,12 @@ const config: Config = {
       items: [
         {
           to: "docs/lessons",
-          label: "Cours",
+          html: "<i class='ph ph-presentation'></i> Cours",
           position: "left",
         },
         {
           to: "docs/labs",
-          label: "Laboratoires",
+          html: "<i class='ph ph-flask'></i> Laboratoires",
           position: "left",
         },
         {
@@ -68,6 +68,11 @@ const config: Config = {
           href: "mailto:david.tang@heig-vd.ch",
           position: "right",
           className: "ph ph-envelope-simple",
+        },
+        {
+          to: "about",
+          position: "right",
+          className: "ph ph-info",
         },
       ],
     },

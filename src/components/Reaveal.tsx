@@ -1,6 +1,6 @@
+import React from "react";
 import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/white.css";
-import React from "react";
 import Markdown from "reveal.js/plugin/markdown/markdown";
 
 export default class Reaveal extends React.Component {
@@ -27,15 +27,15 @@ export default class Reaveal extends React.Component {
       <div>
         <div className="reveal">
           <div className="slides">
-            <section
-              data-auto-animate
-              data-markdown={`/slide/${this.id}.md`}
-            />
+            <section data-auto-animate data-markdown={`/slide/${this.id}.md`} />
           </div>
         </div>
-        Appuyez sur <kbd>F</kbd> pour passer en plein écran ou <kbd>O</kbd> pour afficher la vue d'ensemble.
+        Appuyez sur <kbd>F</kbd> pour passer en plein écran ou <kbd>O</kbd> pour
+        afficher la vue d'ensemble.
         <br />
-        <a href={`/slide/?id=${this.id}&print-pdf`} target="_blank">Version imprimable</a>
+        <a href={`/slide/?id=${this.id}&print-pdf`} target="_blank">
+          Version imprimable
+        </a>
       </div>
     );
   }
