@@ -2,6 +2,8 @@ import React from "react";
 import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/white.css";
 import Markdown from "reveal.js/plugin/markdown/markdown";
+import Katex from "./plugins/katex";
+import Mermaid from "./plugins/mermaid";
 
 export default class Reaveal extends React.Component {
   private id: string;
@@ -15,7 +17,7 @@ export default class Reaveal extends React.Component {
         autoAnimateDuration: 0.25,
         embedded: true,
         hash: true,
-        plugins: [Markdown],
+        plugins: [Markdown, Katex, Mermaid],
         slideNumber: true,
         transition: "fade",
         transitionSpeed: "fast",
