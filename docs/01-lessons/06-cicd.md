@@ -7,7 +7,7 @@
 
 ## Cours
 
-<Reaveal id="cicd" />
+<Reaveal name="cicd" />
 
 ## Références
 

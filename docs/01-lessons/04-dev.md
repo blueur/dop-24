@@ -7,7 +7,7 @@
 
 ## Cours
 
-<Reaveal id="dev" />
+<Reaveal name="dev" />
 
 ## Références
 

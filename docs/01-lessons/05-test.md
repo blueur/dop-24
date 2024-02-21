@@ -6,7 +6,7 @@
 
 ## Cours
 
-<Reaveal id="test" />
+<Reaveal name="test" />
 
 ## Références
 

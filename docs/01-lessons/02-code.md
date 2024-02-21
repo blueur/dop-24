@@ -8,7 +8,7 @@
 
 ## Cours
 
-<Reaveal id="code" />
+<Reaveal name="code" />
 
 ## Références
 

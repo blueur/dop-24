@@ -8,7 +8,7 @@
 
 ## Cours
 
-<Reaveal id="artifact" />
+<Reaveal name="artifact" />
 
 ## Références
 
