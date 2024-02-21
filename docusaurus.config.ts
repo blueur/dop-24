@@ -10,8 +10,8 @@ const config: Config = {
   baseUrl: "/",
 
   i18n: {
-    defaultLocale: "fr",
-    locales: ["fr"],
+    defaultLocale: "fr-CH",
+    locales: ["fr-CH"],
   },
 
   plugins: ["docusaurus-plugin-sass"],

@@ -4,12 +4,14 @@
 
 - Estimer son travail
 - Avoir un environnement de travail fonctionnel
-- Utiliser GitLab
+- Utiliser GitLab et GitHub Classroom
 
 ## Rendu
 
-- Rapport individuel en [Markdown](https://fr.wikipedia.org/wiki/Markdown) sur Cyberlearn avant le prochain cours
-  - Nom du fichier: `lab01-tools-{noms}.md`
+- Rapport individuel en [Markdown](https://fr.wikipedia.org/wiki/Markdown) à rendre avant le prochain cours
+  - GitHub Classroom : https://classroom.github.com/a/nJ316FV5
+  - Nom du fichier : `report.md` à la racine du répertoire
+  - Devoir sur Cyberlearn : mettre le lien de la pull request dans le champ texte
   - Délai: 1 semaine
 
 ## Tâches
@@ -17,17 +19,15 @@
 ### Estimer son travail
 
 - Estimez le temps nécessaire pour réaliser ce laboratoire
-  - Parcourez toute la consigne et estimez le temps nécessaire pour chaque tâche
-  - Notez l'estimation totale en heures ainsi que le découpage en tâches dans votre rapport
-- A la fin du rapport, comparez le temps estimé avec le temps réellement passé
-  - Notez le temps réellement passé dans votre rapport
-  - Comparez avec l'estimation initiale
-  - Expliquez les différences
-- Vous pouvez noter sous forme de tableau, par exemple:
-  | Tâche | Estimation | Temps réel | Commentaire |
-  |-------|------------|------------|-------------|
-  | ... | 2h | 1h30 | ... |
+  - Découpez le travail en tâches pour faciliter l'estimation
+- Lorsque vous avez terminé le laboratoire, comparez le temps estimé avec le temps réellement passé
 - Le but n'étant pas d'estimer correctement, mais comprendre comment vous pourriez améliorer vos estimations
+
+| Tâche      | Temps estimé | Temps réel | Commentaire |
+| ---------- | ------------ | ---------- | ----------- |
+| Estimation | 10m          | 15m        | ...         |
+| ...        | ...          | ...        | ...         |
+| Total      | 2h           | 1h30       | ...         |
 
 ### Environnement de travail
 
@@ -40,7 +40,7 @@ Installez et vérifiez les outils suivants (mettre à jour si nécessaire):
   - Vérifiez avec `docker --version`
   - Vérifiez avec `docker compose version`
 - [Node.js](https://nodejs.org/)
-  - Au moins la version LTS
+  - Au moins la dernière version LTS
   - Vérifiez avec `node --version`
   - Vous pouvez utiliser [nvm](https://github.com/nvm-sh/nvm) pour gérer les versions de Node.js
 - [Python](https://www.python.org/)
@@ -51,6 +51,11 @@ Installez et vérifiez les outils suivants (mettre à jour si nécessaire):
   - Utilisez les [virtualenvs en local](https://python-poetry.org/docs/configuration/#virtualenvsin-project) avec `poetry config virtualenvs.in-project true`
 - [MiniKube](https://minikube.sigs.k8s.io/docs/)
   - Vérifiez avec `minikube version`
+- [Java](https://adoptium.net/fr/)
+  - Au moins la dernière version LTS
+  - Vérifiez avec `java --version`
+- [Maven](https://maven.apache.org/)
+  - Vérifiez avec `mvn --version`
 
 :::tip[Conseils]
 
@@ -76,7 +81,6 @@ Installez et vérifiez les outils suivants (mettre à jour si nécessaire):
 
 - Créez un compte sur [GitLab](https://gitlab.com/) (si vous n'en avez pas déjà un)
   - Préférez un compte privé que vous utiliserez par la suite
-  - Donnez l'URL de votre profil dans votre rapport (p. ex. https://gitlab.com/blueur)
 - Créez un projet privé sur GitLab
   - Nom du projet : `HEIG-VD DevOps`
   - Identifiant du projet (laisser par défaut) : `heig-vd-devops`
@@ -91,7 +95,6 @@ Installez et vérifiez les outils suivants (mettre à jour si nécessaire):
   - Titre : `Rendu labo 01`
   - Assignez l'issue à vous-même
 - Sur votre ordinateur, créez une nouvelle branche `feature/01-tools` et allez dessus
-
   - Créez un projet Vue 3 dans le dossier `/frontend`
     - https://vuejs.org/guide/quick-start.html#creating-a-vue-application
     - Depuis la racine du répertoire, exécutez `npm create vue@latest`
@@ -108,40 +111,16 @@ Installez et vérifiez les outils suivants (mettre à jour si nécessaire):
     - Testez le serveur de développement avec `npm run dev`
   - Créez un commit avec les changements et poussez la branche sur GitLab
   - Créez un projet Poetry dans le dossier `/backend`
-
     - https://python-poetry.org/docs/basic-usage/#project-setup
     - Depuis la racine du répertoire, exécutez `poetry new backend`
     - Depuis le dossier `/backend`, installez [FastAPI](https://fastapi.tiangolo.com/)
-
       - https://fastapi.tiangolo.com/#installation
       - `poetry add fastapi uvicorn[standard]`
-      - Créez un fichier `main.py` dans `/backend/backend` avec le code suivant:
-
-        ```python showLineNumbers
-        from typing import Union
-
-        from fastapi import FastAPI
-
-        app = FastAPI()
-
-
-        @app.get("/")
-        def read_root():
-            return {"Hello": "World"}
-
-
-        @app.get("/items/{item_id}")
-        def read_item(item_id: int, q: Union[str, None] = None):
-            return {"item_id": item_id, "q": q}
-        ```
-
+      - Créez un fichier `main.py` dans `/backend/backend` avec le code suivant ci-dessous
       - Testez le serveur de développement avec `poetry run uvicorn backend.main:app --reload`
       - Vous pourrez voir la documentation de l'API à l'adresse http://127.0.0.1:8000/docs
-
-    - Ajoutez un fichier .gitignore adapté au projet
-
-  - Créez un commit avec les changements et poussez la branche sur GitLab
-
+    - Ajoutez un fichier `.gitignore` adapté au projet
+- Créez un commit avec les changements et poussez la branche sur GitLab
 - Créez une MR pour fusionner votre branche dans `main`
   - Liez d'une façon ou d'une autre la MR à l'issue `Rendu labo 01`
   - Assignez la MR à vous-même
@@ -149,7 +128,25 @@ Installez et vérifiez les outils suivants (mettre à jour si nécessaire):
   - `/estimate 2h` pour estimer le temps nécessaire pour la MR
   - `/spend 1h30` pour indiquer le temps réellement passé
 - Cherchez quelles sont les bonnes pratiques pour un message de commit
-  - Écrivez quelques mots sur les bonnes pratiques que vous avez trouvées dans votre rapport
+  - Écrivez quelques mots sur les bonnes pratiques que vous avez trouvé dans votre rapport
+
+```python title="/backend/backend/main.py" showLineNumbers
+from typing import Union
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: Union[str, None] = None):
+    return {"item_id": item_id, "q": q}
+```
 
 ### Bonus : Réécriture de Git
 
