@@ -30,6 +30,8 @@
 }
 
 div.reveal {
+  --r-link-color: #4271ae;
+
   border: 1px solid var(--docusaurus-highlighted-code-line-bg);
 
   &.embedded {

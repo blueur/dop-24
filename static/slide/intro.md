@@ -6,7 +6,7 @@ DevOps
 
 Qu'est-ce que le DevOps ?
 
-- &shy;<!-- .element: class="fragment" --> **Mouvement** culturel
+&shy;<!-- .element: class="fragment" --> **Mouvement** culturel
 
 ---
 
@@ -30,13 +30,14 @@ Qu'est-ce que le DevOps ?
 
 ---
 
-![](https://orangematter.solarwinds.com/wp-content/uploads/2022/03/DevOps-lifecycle-capabilities-1024x621.png)
+![](https://orangematter.solarwinds.com/wp-content/uploads/2022/03/DevOps-lifecycle-capabilities-1024x621.png)  
 https://orangematter.solarwinds.com/2022/03/21/what-is-devops/ <!-- .element: class="reference" target="_blank" -->
 
 ---
 
-- Est-ce un processus DevOps ?
-- &shy;<!-- .element: class="fragment" --> Evaluation avec le framework **CALMS**
+Est-ce un processus DevOps ?
+
+&shy;<!-- .element: class="fragment" --> Evaluation avec le framework **CALMS**
 
 ---
 
@@ -142,12 +143,12 @@ https://orangematter.solarwinds.com/2022/03/21/what-is-devops/ <!-- .element: cl
 
 ---
 
-![](https://cdnb.ganttpro.com/uploads/2016/11/waterfall-and-agile-methods.jpg)
+![](https://cdnb.ganttpro.com/uploads/2016/11/waterfall-and-agile-methods.jpg)  
 https://blog.ganttpro.com/en/waterfall-vs-agile-with-advantages-and-disadvantages/ <!-- .element: class="reference" target="_blank" -->
 
 ---
 
-![](https://powerslides.com/wp-content/uploads/2019/03/Agile-vs-Waterfall-3.png)
+![](https://powerslides.com/wp-content/uploads/2019/03/Agile-vs-Waterfall-3.png)  
 https://powerslides.com/powerpoint-business/project-management-templates/agile-vs-waterfall/ <!-- .element: class="reference" target="_blank" -->
 
 ---

@@ -27,7 +27,7 @@ DevOps
 
 ## Logiciel de gestion de versions
 
-- &shy;<!-- .element: class="fragment" --> Version control system (VCS)
+- &shy;<!-- .element: class="fragment" --> Version control system (**VCS**)
 - &shy;<!-- .element: class="fragment" --> **Conserve** le code source avec son **historique**
 - &shy;<!-- .element: class="fragment" --> Facilite la **collaboration**
 - &shy;<!-- .element: class="fragment" --> Le plus populaire: **Git**
@@ -40,7 +40,7 @@ DevOps
 - &shy;<!-- .element: class="fragment" --> Les modifications sont stockées dans des **commits**
 - &shy;<!-- .element: class="fragment" --> Chaque commit est **identifié** par un **hash**
 - &shy;<!-- .element: class="fragment" --> Chaque commit a un **parent**
-- &shy;<!-- .element: class="fragment" --> Les **branches** et **tags** sont des pointeurs vers un commit
+- &shy;<!-- .element: class="fragment" --> Les **branches** et **tags** sont des **pointeurs** vers un commit
 - &shy;<!-- .element: class="fragment" --> Les **branches** sont des pointeurs **mobiles**
 
 ---
@@ -105,7 +105,7 @@ Fonctionnalité fusionnée :
 
 ### Gitflow Workflow
 
-- &shy;<!-- .element: class="fragment" --> **Deux** branches principales : main et develop
+- &shy;<!-- .element: class="fragment" --> Deux branches principales : **main** et **develop**
   - &shy;<!-- .element: class="fragment" --> main : **stable**
   - &shy;<!-- .element: class="fragment" --> develop : en cours de **développement**
 - &shy;<!-- .element: class="fragment" --> Une branche par **fonctionnalité**
