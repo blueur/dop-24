@@ -9,11 +9,11 @@ DevOps
 ```mermaid
 flowchart LR
 subgraph "Développement"
-  code[fas:fa-code Code]-->build[fas:fa-cogs Build]
+  code[<i class="ph ph-code"></i> Code]-->build[<i class="ph ph-wrench"></i> Build]
 end
-  build-->package[fas:fa-archive Package]-->run
+  build-->package[<i class="ph ph-package"></i> Package]-->run
 subgraph "Production"
-  run[fas:fa-play Run]-->deploy[fas:fa-cloud Operate]
+  run[<i class="ph ph-play"></i> Run]-->deploy[<i class="ph ph-cloud"></i> Operate]
 end
 ```
 
@@ -126,8 +126,7 @@ CMD [ "python", "./your-daemon-or-script.py" ]
 
 ### Couches
 
-![](https://docs.docker.com/build/guide/images/layers.png)
-https://docs.docker.com/build/guide/layers/ <!-- .element: class="reference" target="_blank" -->
+[![](https://docs.docker.com/build/guide/images/layers.png)](https://docs.docker.com/build/guide/layers/) <!-- .element: target="_blank" -->
 
 - &shy;<!-- .element: class="fragment" --> Image = couches de **diff** de fichiers
 
@@ -135,8 +134,7 @@ https://docs.docker.com/build/guide/layers/ <!-- .element: class="reference" tar
 
 ### Cache des couches
 
-![](https://docs.docker.com/build/guide/images/reordered-layers.png)
-https://docs.docker.com/build/guide/layers/ <!-- .element: class="reference" target="_blank" -->
+[![](https://docs.docker.com/build/guide/images/reordered-layers.png)](https://docs.docker.com/build/guide/layers/) <!-- .element: target="_blank" -->
 
 - &shy;<!-- .element: class="fragment" --> **Ordre** des couches pour le **cache**
 - &shy;<!-- .element: class="fragment" --> Du plus **stable** (dépendances)
@@ -146,8 +144,7 @@ https://docs.docker.com/build/guide/layers/ <!-- .element: class="reference" tar
 
 ### Container
 
-![](https://docs.docker.com/storage/storagedriver/images/sharing-layers.jpg)
-https://docs.docker.com/storage/storagedriver/ <!-- .element: class="reference" target="_blank" -->
+[![](https://docs.docker.com/storage/storagedriver/images/sharing-layers.webp)](https://docs.docker.com/storage/storagedriver/) <!-- .element: target="_blank" -->
 
 - &shy;<!-- .element: class="fragment" --> **Partage** des couches entre les containers
 
@@ -255,6 +252,20 @@ end
 - &shy;<!-- .element: class="fragment" --> Utilisé par les **gestionnaires de paquets**
   - &shy;<!-- .element: class="fragment" --> `^1.0.0` (>= 1.0.0 &lt; 2.0.0)
   - &shy;<!-- .element: class="fragment" --> `~1.0.0` (>= 1.0.0 &lt; 1.1.0)
+
+---
+
+### Docker Image Tag
+
+- &shy;<!-- .element: class="fragment" --> `latest`
+  - &shy;<!-- .element: class="fragment" --> Par **défaut** si non spécifié
+- &shy;<!-- .element: class="fragment" --> `1.3.2`
+  - &shy;<!-- .element: class="fragment" --> Spécifique à une **version** précise
+  - &shy;<!-- .element: class="fragment" --> Pas de mise à jour des **patch** de **sécurité** automatiquement
+- &shy;<!-- .element: class="fragment" --> `1.3`
+  - &shy;<!-- .element: class="fragment" --> Spécifique à une version **minor**
+  - &shy;<!-- .element: class="fragment" --> **Recommandé** car **stable** et **sécurisé**
+  - &shy;<!-- .element: class="fragment" --> Selon les projets, plutôt fixer la version **major**
 
 ---
 

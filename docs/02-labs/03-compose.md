@@ -46,7 +46,7 @@
 
 Pour éviter des probèmes de [CORS](https://developer.mozilla.org/fr/docs/Web/HTTP/CORS) avec le frontend, nous allons utiliser [Traefik](https://doc.traefik.io/traefik/) comme reverse proxy afin de servir le frontend et le backend sur le même domaine.
 
-- Ajoutez Traefik au `docker-compose.yml` afin de rediriger les requêtes comme suit:
+- Ajoutez Traefik au `compose.yml` afin de rediriger les requêtes comme suit:
   - Commençant par `/` vers le frontend
   - Commençant par `/api` vers le backend
 - [Exemple de Docker Compose](https://doc.traefik.io/traefik/user-guides/docker-compose/basic-example/)

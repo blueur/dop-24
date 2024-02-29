@@ -121,9 +121,9 @@ https://12factor.net/fr/ <!-- .element: target="_blank" -->
 
 ## Docker Compose
 
-- &shy;<!-- .element: class="fragment" --> **Définition** des services dans un fichier YAML `docker-compose.yml`
+- &shy;<!-- .element: class="fragment" --> **Définition** des services dans un fichier YAML `compose.yml`
 - &shy;<!-- .element: class="fragment" --> **Actions groupées** :
-  - &shy;<!-- .element: class="fragment" --> `docker-compose up`, `docker-compose down`, etc.
+  - &shy;<!-- .element: class="fragment" --> `docker compose up`, `docker compose down`, etc.
 - &shy;<!-- .element: class="fragment" --> **Préconfiguration** des containers :
   - &shy;<!-- .element: class="fragment" --> variables d'environnement, ports, volumes, réseaux, etc.
 
@@ -132,7 +132,6 @@ https://12factor.net/fr/ <!-- .element: target="_blank" -->
 ### Docker Compose : Exemple
 
 ```yaml
-version: "3"
 services:
   db:
     image: postgres

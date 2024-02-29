@@ -9,8 +9,10 @@
 
 ## Rendu
 
-- Rapport individuel en Markdown sur Cyberlearn avant le prochain cours
-  - Nom du fichier: `lab02-docker-{noms}.md`
+- Rapport individuel en Markdown à rendre avant le prochain cours
+  - GitHub Classroom : https://classroom.github.com/a/ZmkThKLK
+  - Nom du fichier : `report.md` à la racine du répertoire
+  - Devoir sur Cyberlearn : mettre le lien de la pull request dans le champ texte
   - Délai: 1 semaine
   - **Laboratoire noté**
 
@@ -18,17 +20,19 @@
 
 ### Estimer son travail
 
-- Estimez le temps total nécessaire pour réaliser ce laboratoire
+- Estimez le temps nécessaire pour réaliser ce laboratoire
   - Découpez le travail en tâches pour faciliter l'estimation
-- A la fin du rapport, comparez le temps estimé avec le temps réellement passé:
-  | Tâche | Temps estimé | Temps réel | Commentaire |
-  |-------|--------------|------------|-------------|
-  | ... | 30m | 45m | ... |
-  | ... | ... | ... | ... |
-  | Total | 2h | 1h30 | ... |
+- Lorsque vous avez terminé le laboratoire, comparez le temps estimé avec le temps réellement passé
+
+| Tâche      | Temps estimé | Temps réel | Commentaire |
+| ---------- | ------------ | ---------- | ----------- |
+| Estimation | 10m          | 15m        | ...         |
+| ...        | ...          | ...        | ...         |
+| Total      | 2h           | 1h30       | ...         |
 
 ### Git
 
+- Reprenez votre projet sur GitLab du laboratoire précédent (HEIG-VD DevOps)
 - Mettez tout votre travail sur une branche `feature/02-docker` et faites une merge request (MR) sur `main`
 - Séparez votre travail en commits cohérents
 - Utilisez des messages de commit clairs et concis
@@ -44,18 +48,18 @@
       - `docker build -t frontend . && docker run -p 80:80 frontend`
     - Backend
       - `docker build -t backend . && docker run -p 8080:80 backend`
-  - N'oubliez pas le [`.dockerignore`](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
+  - N'oubliez pas les [`.dockerignore`](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
 - Dans votre rapport, justifier vos choix dans vos Dockerfiles
 
 ### Docker Compose
 
-- Créez un `docker-compose.yml` pour démarrer les deux applications
+- Créez un `compose.yml` pour démarrer les deux applications
   - Depuis la racine du projet, on doit pouvoir
-    - construire les deux applications avec `docker-compose build`
-    - démarrer les deux applications avec `docker-compose up`
+    - construire les deux applications avec `docker compose build`
+    - démarrer les deux applications avec `docker compose up`
     - accéder à l'application frontend sur le port 80
     - accéder à l'application backend sur le port 8080
-    - arrêter les deux applications avec `docker-compose down`
+    - arrêter les deux applications avec `docker compose down`
 - Ajoutez un service `database`
   - Utilisez une base de données PostgreSQL
   - Utilisez les crédentials suivants:
@@ -63,7 +67,7 @@
     - password: postgres
     - database: postgres
   - Exposez le port 5432
-  - Ajoutez un volume pour persister les données (on doit pouvoir supprimer le conteneur `docker-compose rm` et le recréer sans perdre les données)
+  - Ajoutez un volume pour persister les données (on doit pouvoir supprimer le conteneur `docker compose rm` et le recréer sans perdre les données)
   - Vous pouvez utiliser [DBeaver](https://dbeaver.io/) pour visualiser les données
 - Indiquez les dépendances entre les services
 - Dans votre rapport, justifier vos choix pour le docker compose et la database
@@ -74,16 +78,16 @@
 
 Pour atteindre le 4 :
 
-- Le rapport est complet et bien structuré
+- Le rapport est complet
 - Le rendu sur GitLab est correct et dans les temps
-- Le docker-compose fonctionne (on peut démarrer les deux applications et la base de données)
+- Le Docker Compose fonctionne (on peut démarrer les deux applications et la base de données)
 
 ### Critères d'amélioration
 
 Pour atteindre le 6 :
 
-- Le rapport est bien écrit et agréable à lire
 - Bonne justification des choix techniques (utilisation des bonnes pratiques)
 - Lisibilité du code
-- Les commits sont cohérents et bien structurés
+- Les commits sont cohérents et bien organisés
 - Persistance des données, dockerignore, dépendances des services, ...
+- Rédaction du rapport (concis, clair, bien structuré, ...)
