@@ -11,7 +11,7 @@
 - Rapport individuel en [Markdown](https://fr.wikipedia.org/wiki/Markdown) à rendre avant le prochain cours
   - GitHub Classroom : https://classroom.github.com/a/nJ316FV5
   - Nom du fichier : `report.md` à la racine du répertoire
-  - Devoir sur Cyberlearn : mettre le lien de la pull request dans le champ texte
+  - Devoir sur Cyberlearn : mettre le lien de la pull request GitLab dans le champ texte
   - Délai: 1 semaine
 
 ## Tâches

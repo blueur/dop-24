@@ -1,3 +1,6 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Compose
 
 ## Objectifs
@@ -10,28 +13,31 @@
 
 ## Rendu
 
-- Rapport individuel en Markdown sur Cyberlearn avant le prochain cours
-  - Nom du fichier: `lab03-compose-{nom}.md`
+- Rapport individuel en Markdown à rendre avant le prochain cours
+  - GitHub Classroom : https://classroom.github.com/a/9OqjgI3Y
+  - Nom du fichier : `report.md` à la racine du répertoire
+  - Devoir sur Cyberlearn : mettre le lien de la pull request GitLab dans le champ texte
   - Délai: 1 semaine
 
 ## Tâches
 
 ### Estimer son travail
 
-- Estimez le temps total nécessaire pour réaliser ce laboratoire
+- Estimez le temps nécessaire pour réaliser ce laboratoire
   - Découpez le travail en tâches pour faciliter l'estimation
-- A la fin du rapport, comparez le temps estimé avec le temps réellement passé:
-  | Tâche | Temps estimé | Temps réel | Commentaire |
-  |-------|--------------|------------|-------------|
-  | ... | 30m | 45m | ... |
-  | ... | ... | ... | ... |
-  | Total | 2h | 1h30 | ... |
+- Lorsque vous avez terminé le laboratoire, comparez le temps estimé avec le temps réellement passé
+
+| Tâche      | Temps estimé | Temps réel | Commentaire |
+| ---------- | ------------ | ---------- | ----------- |
+| Estimation | 10m          | 15m        | ...         |
+| ...        | ...          | ...        | ...         |
+| Total      | 2h           | 1h30       | ...         |
 
 ### Git
 
+- Reprenez votre projet sur GitLab du laboratoire précédent (HEIG-VD DevOps)
 - Mettez tout votre travail sur une branche `feature/03-compose` et faites une merge request (MR) sur `main` en m'ajoutant comme reviewer
-- Séparez votre travail en commits cohérents
-- Utilisez des messages de commit clairs et concis
+- Séparez votre travail en commits cohérents avec des messages de commit clairs et concis
 
 ### Créer un Makefile
 
@@ -54,31 +60,33 @@ Pour éviter des probèmes de [CORS](https://developer.mozilla.org/fr/docs/Web/H
 - Pour le backend, utilisez le [StripPrefix](https://doc.traefik.io/traefik/middlewares/http/stripprefix/) afin de supprimer le préfixe `/api` avant de rediriger la requête
   - Une fois le middleware créé, il faut l'ajouter au service. Voir l'[exemple](https://doc.traefik.io/traefik/middlewares/http/overview/#configuration-example)
 - De plus, il faut configurer le [root_path](https://fastapi.tiangolo.com/advanced/behind-a-proxy/) de FastAPI pour qu'il corresponde au préfixe `/api`
-
-  - Afin de pouvoir changer la valeur du `root_path` grâce à une variable d'environnement, modifiez le fichier `main.py` comme suit:
-
-    ```python
-    from typing import Union
-    from os import getenv // [!code focus]
-
-    from fastapi import FastAPI
-
-    app = FastAPI(root_path=getenv("ROOT_PATH")) // [!code focus]
-
-    @app.get("/")
-    def read_root():
-        return {"Hello": "World"}
-
-    @app.get("/items/{item_id}")
-    def read_item(item_id: int, q: Union[str, None] = None):
-        return {"item_id": item_id, "q": q}
-    ```
-
+  - Afin de pouvoir changer la valeur du `root_path` grâce à une variable d'environnement, modifiez le fichier `main.py` comme indiqué ci-dessous:
 - Indiquez votre démarche dans le rapport
 
-::: details Solution `compose.yml`
+```python title="/backend/backend/main.py" showLineNumbers
+from typing import Union
+# highlight-next-line
+from os import getenv
 
-```yml
+from fastapi import FastAPI
+
+# highlight-next-line
+app = FastAPI(root_path=getenv("ROOT_PATH"))
+
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
+
+@app.get("/items/{item_id}")
+def read_item(item_id: int, q: Union[str, None] = None):
+    return {"item_id": item_id, "q": q}
+```
+
+<details>
+  <summary>Solution `compose.yml`</summary>
+  <div>
+
+```yml title="compose.yml" showLineNumbers
 services:
   reverse-proxy:
     image: traefik:v2.10
@@ -99,19 +107,20 @@ services:
       - "traefik.http.middlewares.backend-stripprefix.stripprefix.prefixes=/api"
 ```
 
-:::
+  </div>
+</details>
 
 ### Connecter le backend à la database
 
 - On va utiliser [SQLAlchemy](https://www.sqlalchemy.org/) pour connecter le backend à la database en suivant la [documentation de FastAPI](https://fastapi.tiangolo.com/tutorial/sql-databases/)
-
   - Installez le package `sqlalchemy` et `psycopg2` dans le backend
     `poetry add sqlalchemy psycopg2`
   - Créez/modifiez les fichiers suivants dans `/backend/backend/` afin d'avoir un service [CRUD](https://developer.mozilla.org/fr/docs/Glossary/CRUD) :
 
-::: code-group
+<Tabs>
+  <TabItem value="database.py" default>
 
-```python [database.py]
+```python title="/backend/backend/database.py" showLineNumbers
 from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
@@ -124,7 +133,10 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 ```
 
-```python [models.py]
+  </TabItem>
+  <TabItem value="models.py">
+
+```python title="/backend/backend/models.py" showLineNumbers
 from sqlalchemy import Column, Double, Integer, String
 
 from .database import Base
@@ -139,7 +151,10 @@ class Product(Base):
     price = Column(Double, index=True, nullable=False)
 ```
 
-```python [schemas.py]
+  </TabItem>
+  <TabItem value="schemas.py">
+
+```python title="/backend/backend/schemas.py" showLineNumbers
 from pydantic import BaseModel
 
 
@@ -160,7 +175,10 @@ class Product(ProductBase):
         from_attributes = True
 ```
 
-```python [main.py]
+  </TabItem>
+  <TabItem value="main.py">
+
+```python title="/backend/backend/main.py" showLineNumbers
 from os import getenv
 
 from fastapi import Depends, FastAPI, HTTPException
@@ -219,7 +237,8 @@ def delete_product(product_id: int, db: Session = Depends(get_db)):
     return db_product
 ```
 
-:::
+  </TabItem>
+</Tabs>
 
 - Démarrez le backend `poetry run uvicorn backend.main:app --reload` et testez les endpoints sur http://localhost:8000/docs
 - Vérifiez que le Docker Compose fonctionne toujours `docker compose up --build` et corrigez au besoin
@@ -234,9 +253,11 @@ def delete_product(product_id: int, db: Session = Depends(get_db)):
     - `poetry run dotenv -f ../.env run uvicorn backend.main:app --reload`
   - Indiquez vos modifications (autres que celles indiquées) dans le rapport
 
-::: details Solution `/backend/backend/database.py`
+<details>
+  <summary>Solution `database.py`</summary>
+  <div>
 
-```python
+```python title="/backend/backend/database.py" showLineNumbers
 from os import getenv
 
 from sqlalchemy import create_engine
@@ -256,31 +277,39 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 ```
 
-:::
+  </div>
+</details>
 
-::: details Solution `/backend/Dockerfile`
+<details>
+  <summary>Solution `Dockerfile`</summary>
+  <div>
 
 Il faut ajouter des librairies supplémentaires pour que le backend fonctionne avec PostgreSQL:
 
-```dockerfile
+```dockerfile title="/backend/Dockerfile"
 RUN apk add --no-cache \
   musl-dev \
   postgresql-dev
 ```
 
-:::
+  </div>
+</details>
 
 ### Ajoutez un frontend
 
 - Dans le dossier `/frontend/`, ajoutez/modifiez les fichiers suivants afin de configurer les [environnements](https://vitejs.dev/guide/env-and-mode.html) et le [proxy](https://vitejs.dev/config/server-options.html#server-proxy) :
 
-::: code-group
+<Tabs>
+  <TabItem value=".env" default>
 
-```txt [.env]
+```txt title="/frontend/.env" showLineNumbers
 VITE_BACKEND_URL=/api
 ```
 
-```ts [env.d.ts]
+  </TabItem>
+  <TabItem value="env.d.ts">
+
+```ts title="/frontend/env.d.ts" showLineNumbers
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
@@ -292,7 +321,10 @@ interface ImportMeta {
 }
 ```
 
-```ts [vite.config.ts] {14-22}
+  </TabItem>
+  <TabItem value="vite.config.ts">
+
+```ts title="/frontend/vite.config.ts" showLineNumbers
 import { fileURLToPath, URL } from "node:url";
 
 import { defineConfig } from "vite";
@@ -306,6 +338,7 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  // highlight-start
   server: {
     proxy: {
       "/api": {
@@ -315,31 +348,35 @@ export default defineConfig({
       },
     },
   },
+  // highlight-end
 });
 ```
 
-:::
+  </TabItem>
+</Tabs>
 
 - On va utiliser [Milligram](https://milligram.io/) comme framework CSS :
-
   - `npm install milligram`
-  - Modifier le fichier `frontend/src/main.ts` comme suit :
-
-    ```ts
-    import "milligram/dist/milligram.min.css"; // [!code focus]
-
-    import { createApp } from "vue";
-    import App from "./App.vue";
-
-    createApp(App).mount("#app");
-    ```
-
 - Supprimez tous les fichiers sous `/frontend/src/assets/` et `/frontend/src/components/`
 - Sous `/frontend/src/`, créez/modifiez les fichiers suivants :
 
-::: code-group
+<Tabs>
+  <TabItem value="main.ts" default>
 
-```vue [App.vue]
+```ts title="/frontend/src/main.ts" showLineNumbers
+// highlight-next-line
+import "milligram/dist/milligram.min.css";
+
+import { createApp } from "vue";
+import App from "./App.vue";
+
+createApp(App).mount("#app");
+```
+
+  </TabItem>
+  <TabItem value="App.vue">
+
+```ts title="/frontend/src/App.vue" showLineNumbers
 <script setup lang="ts">
 import ProductManager from "./components/ProductManager.vue";
 </script>
@@ -351,7 +388,10 @@ import ProductManager from "./components/ProductManager.vue";
 </template>
 ```
 
-```vue [components/ProductManager.vue]
+  </TabItem>
+  <TabItem value="components/ProductManager.vue">
+
+```ts title="/frontend/src/components/ProductManager.vue" showLineNumbers
 <script setup lang="ts">
 import { ref, onMounted, reactive } from "vue";
 
@@ -464,7 +504,8 @@ function deleteProduct(id: number) {
 </template>
 ```
 
-:::
+  </TabItem>
+</Tabs>
 
 - Démarrez le frontend `npm run dev` et testez l'application (avec le backend et la database démarrés)
 - Vérifiez que le Docker Compose fonctionne

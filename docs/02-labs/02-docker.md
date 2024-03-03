@@ -12,7 +12,7 @@
 - Rapport individuel en Markdown à rendre avant le prochain cours
   - GitHub Classroom : https://classroom.github.com/a/ZmkThKLK
   - Nom du fichier : `report.md` à la racine du répertoire
-  - Devoir sur Cyberlearn : mettre le lien de la pull request dans le champ texte
+  - Devoir sur Cyberlearn : mettre le lien de la pull request GitLab dans le champ texte
   - Délai: 1 semaine
   - **Laboratoire noté**
 
@@ -34,8 +34,7 @@
 
 - Reprenez votre projet sur GitLab du laboratoire précédent (HEIG-VD DevOps)
 - Mettez tout votre travail sur une branche `feature/02-docker` et faites une merge request (MR) sur `main`
-- Séparez votre travail en commits cohérents
-- Utilisez des messages de commit clairs et concis
+- Séparez votre travail en commits cohérents avec des messages de commit clairs et concis
 
 ### Docker
 

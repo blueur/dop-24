@@ -44,6 +44,9 @@ div.reveal {
 
   --r-heading-text-transform: none;
 
+  p:has(> .reference) {
+    line-height: 0.4;
+  }
   strong {
     color: var(--ifm-color-primary);
   }

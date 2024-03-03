@@ -15,6 +15,7 @@ DevOps
 ## Pourquoi tester tôt ?
 
 ![](https://www.researchgate.net/profile/Maurice-Dawson/publication/255965523/figure/fig1/AS:297976107945984@1448054448271/IBM-System-Science-Institute-Relative-Cost-of-Fixing-Defects.png)
+
 https://www.researchgate.net/figure/IBM-System-Science-Institute-Relative-Cost-of-Fixing-Defects_fig1_255965523 <!-- .element: class="reference" target="_blank" -->
 
 ---
@@ -76,14 +77,16 @@ https://www.softwaretestinghelp.com/types-of-software-testing/ <!-- .element: cl
 ---
 
 Pyramide de tests
+
 ![](https://user.oc-static.com/upload/2019/08/17/15660719394662_P1CH1_pyramid.png)
+
 https://openclassrooms.com/fr/courses/6100311-testez-votre-code-java-pour-realiser-des-applications-de-qualite/6440061-choisissez-les-bons-tests-automatises-avec-la-pyramide-de-tests <!-- .element: class="reference" target="_blank" -->
 
 ---
 
 Pas de glace !
-![](https://user.oc-static.com/upload/2019/08/18/15661075632134_P1CH1_cone_tests.png)
-https://openclassrooms.com/fr/courses/6100311-testez-votre-code-java-pour-realiser-des-applications-de-qualite/6440061-choisissez-les-bons-tests-automatises-avec-la-pyramide-de-tests <!-- .element: class="reference" target="_blank" -->
+
+[![](https://user.oc-static.com/upload/2019/08/18/15661075632134_P1CH1_cone_tests.png)](https://openclassrooms.com/fr/courses/6100311-testez-votre-code-java-pour-realiser-des-applications-de-qualite/6440061-choisissez-les-bons-tests-automatises-avec-la-pyramide-de-tests) <!-- .element: target="_blank" -->
 
 ---
 

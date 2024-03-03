@@ -209,14 +209,14 @@ CMD ["java", "-jar", "my-app.jar"]
 
 ---
 
-## Artefact
+## Artéfact
 
 - &shy;<!-- .element: class="fragment" --> **Résultat** d'un **build**
 - &shy;<!-- .element: class="fragment" --> Terme **générique** (pas de format spécifique) du paquet
 
 ---
 
-### Artefact vs Package
+### Artéfact vs Package
 
 ```mermaid
 flowchart
@@ -232,7 +232,7 @@ end
 
 ---
 
-## Gestionnaire d'artefacts
+## Gestionnaire d'artéfacts
 
 - &shy;<!-- .element: class="fragment" --> [Sonatype Nexus Repository](https://www.sonatype.com/nexus-repository-sonatype) <!-- .element: target="_blank" -->
   - &shy;<!-- .element: class="fragment" --> [Version OSS](https://www.sonatype.com/nexus-repository-oss) (open-source software) <!-- .element: target="_blank" -->
