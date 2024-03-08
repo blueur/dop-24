@@ -25,7 +25,7 @@ import TabItem from '@theme/TabItem';
 
 - Estimez le temps nécessaire pour réaliser ce laboratoire
   - Découpez le travail en tâches pour faciliter l'estimation
-- Lorsque vous avez terminé le laboratoire, comparez le temps estimé avec le temps réellement passé
+- Lorsque vous aurez terminé le laboratoire, comparez le temps estimé avec le temps réellement passé
 
 | Tâche      | Temps estimé | Temps réel | Commentaire |
 | ---------- | ------------ | ---------- | ----------- |

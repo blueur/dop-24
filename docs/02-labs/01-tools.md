@@ -20,7 +20,7 @@
 
 - Estimez le temps nécessaire pour réaliser ce laboratoire
   - Découpez le travail en tâches pour faciliter l'estimation
-- Lorsque vous avez terminé le laboratoire, comparez le temps estimé avec le temps réellement passé
+- Lorsque vous aurez terminé le laboratoire, comparez le temps estimé avec le temps réellement passé
 - Le but n'étant pas d'estimer correctement, mais comprendre comment vous pourriez améliorer vos estimations
 
 | Tâche      | Temps estimé | Temps réel | Commentaire |
