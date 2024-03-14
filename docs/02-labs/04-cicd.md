@@ -203,7 +203,7 @@ Vous allez devoir tester beaucoup de changements sur la pipeline, une manière d
 Commencez par le frontend (commencez vos scripts par `cd frontend/`)
 
 - Le job `build-frontend` utilise l'image `node:lts`, exécute `npm ci` et `npm run build`
-  - Le résultat du build est gardé dans un artifact pour être utilisé par le job `deploy-frontend`
+  - Le résultat du build est gardé dans un artéfact pour être utilisé par le job `deploy-frontend`
   - Ajoutez le [cache](https://docs.gitlab.com/ee/ci/caching/#cache-nodejs-dependencies)
 - Le job `deploy-frontend` utilise l'image `docker` avec le service `docker:dind`, exécute `docker build -t ${CI_REGISTRY_IMAGE}/frontend:latest .` et `docker push ${CI_REGISTRY_IMAGE}/frontend:latest`
   - [Docker in Docker](https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#docker-in-docker-with-tls-enabled-in-the-docker-executor)
@@ -299,10 +299,8 @@ test-backend:
 ```
 
 - Ajoutez les éléments suivants
-
   - [Unit test reports](https://docs.gitlab.com/ee/ci/testing/unit_test_reports.html#how-to-set-it-up) avec [JUnitXML](https://docs.pytest.org/en/latest/how-to/output.html#creating-junitxml-format-files)
   - [Test coverage visualization](https://docs.gitlab.com/ee/ci/testing/test_coverage_visualization.html#python-example)
-
 - Le job `deploy-backend` est très similaire au job `deploy-frontend`
 
 <details>

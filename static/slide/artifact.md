@@ -220,7 +220,7 @@ CMD ["java", "-jar", "my-app.jar"]
 
 ```mermaid
 flowchart
-subgraph "Artefact"
+subgraph "Artéfact"
   docker[Docker image]
   subgraph "Package"
     jar[JAR]

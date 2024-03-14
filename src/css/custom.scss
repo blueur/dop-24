@@ -51,6 +51,9 @@ div.reveal {
     color: var(--ifm-color-primary);
   }
 
+  .code-wrapper {
+    width: var(--slide-width);
+  }
   .reference {
     font-size: small;
   }

@@ -2,7 +2,7 @@
 
 ## Objectifs
 
-- Comprendre la notion de paquet et d'artefact
+- Comprendre la notion de paquet et d'artéfact
 - Comprendre le fonctionnement d'un conteneur
 - Dockeriser une application
 

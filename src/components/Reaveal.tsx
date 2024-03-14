@@ -1,6 +1,8 @@
-import React, { createRef } from "react";
 import "reveal.js/dist/reveal.css";
 import "reveal.js/dist/theme/white.css";
+import "reveal.js/plugin/highlight/monokai.css";
+
+import React, { createRef } from "react";
 import Markdown from "reveal.js/plugin/markdown/markdown";
 import Katex from "./plugins/katex";
 import Mermaid from "./plugins/mermaid";
@@ -21,17 +23,19 @@ export default class Reaveal extends React.Component<{
   }
   componentDidMount() {
     import("reveal.js").then((reveal) => {
-      new reveal.default({
-        autoAnimateDuration: 0.25,
-        embedded: !this.props.full,
-        hash: true,
-        pdfMaxPagesPerSlide: 1,
-        pdfSeparateFragments: false,
-        plugins: [Markdown, Katex, Mermaid],
-        slideNumber: true,
-        transition: "fade",
-        transitionSpeed: "fast",
-      }).initialize();
+      import("reveal.js/plugin/highlight/highlight").then((highlight) => {
+        new reveal.default({
+          autoAnimateDuration: 0.25,
+          embedded: !this.props.full,
+          hash: true,
+          pdfMaxPagesPerSlide: 1,
+          pdfSeparateFragments: false,
+          plugins: [Markdown, highlight.default, Katex, Mermaid],
+          slideNumber: true,
+          transition: "fade",
+          transitionSpeed: "fast",
+        }).initialize();
+      });
     });
     window.addEventListener("resize", this.resize);
   }

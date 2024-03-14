@@ -31,15 +31,15 @@ DevOps
 ## Continuous Delivery
 
 - &shy;<!-- .element: class="fragment" --> **Automatiser** la **distribution** du logiciel
-  - &shy;<!-- .element: class="fragment" --> Création de l'**artefact** (jar, Docker image, etc.)
-  - &shy;<!-- .element: class="fragment" --> **Publication** de l'artefact (npm, pip, Docker Hub, etc.)
+  - &shy;<!-- .element: class="fragment" --> Création de l'**artéfact** (jar, Docker image, etc.)
+  - &shy;<!-- .element: class="fragment" --> **Publication** de l'artéfact (npm, pip, Docker Hub, etc.)
 
 ---
 
 ## Continuous Deployment
 
 - &shy;<!-- .element: class="fragment" --> **Automatiser** le **déploiement** du logiciel
-  - &shy;<!-- .element: class="fragment" --> **Installation** de l'artefact sur l'environnement de **production**
+  - &shy;<!-- .element: class="fragment" --> **Installation** de l'artéfact sur l'environnement de **production**
   - &shy;<!-- .element: class="fragment" --> **Mise à jour** du logiciel
 
 ---
@@ -104,11 +104,11 @@ sequenceDiagram
 
 ## GitLab CI/CD
 
+![](https://docs.gitlab.com/ee/ci/quick_start/img/pipeline_graph_v13_6.png)
+
 - &shy;<!-- .element: class="fragment" --> **Pipeline**
   - &shy;<!-- .element: class="fragment" --> **Stage** (build, test, deploy, etc.)
     - &shy;<!-- .element: class="fragment" --> **Job** contient un **script** exécuté par un **runner** dans un **container**
-
-![](https://docs.gitlab.com/ee/ci/quick_start/img/pipeline_graph_v13_6.png)
 
 ---
 
@@ -173,12 +173,12 @@ deploy-prod:
 
 ---
 
-### Artifacts
+### Artéfacts
 
-- &shy;<!-- .element: class="fragment" --> A la fin de chaque **job**, possibilité de **sauvegarder** des **artefacts**
+- &shy;<!-- .element: class="fragment" --> A la fin de chaque **job**, possibilité de **sauvegarder** des **artéfacts**
   - &shy;<!-- .element: class="fragment" --> Fichiers ou dossiers
-- &shy;<!-- .element: class="fragment" --> Possibilité de **récupérer** les artefacts d'un job dans un autre
-- &shy;<!-- .element: class="fragment" --> Possibilité de **télécharger** les artefacts depuis l'interface
+- &shy;<!-- .element: class="fragment" --> Possibilité de **récupérer** les artéfacts d'un job dans un autre
+- &shy;<!-- .element: class="fragment" --> Possibilité de **télécharger** les artéfacts depuis l'interface
 - &shy;<!-- .element: class="fragment" --> [Job artifacts](https://docs.gitlab.com/ee/ci/jobs/job_artifacts.html) <!-- .element: target="_blank" -->
 
 ---
