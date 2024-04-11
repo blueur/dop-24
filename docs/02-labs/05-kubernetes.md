@@ -9,24 +9,25 @@
 
 ## Rendu
 
-- Rapport individuel en **PDF** sur Cyberlearn
-  - Nom du fichier: `lab05-kubernetes-{nom}.pdf`
-  - Délai: 1 semaine
-- Mettez tout votre travail sur une branche `feature/05-kubernetes` et faites une merge request (MR) sur `main` en m'ajoutant comme reviewer
-- Ajoutez un lien vers le commit dans votre rapport
+- GitHub Classroom : https://classroom.github.com/a/xW6ZdJoY
+  - Rapport individuel en Markdown à rendre avant le prochain cours
+  - Nom du fichier : `report.md` à la racine du répertoire
+- Devoir sur Cyberlearn : mettre le lien de la pull request GitLab dans le champ texte
+- Délai: 1 semaine
 
 ## Tâches
 
 ### Estimer son travail
 
-- Estimez le temps total nécessaire pour réaliser ce laboratoire
+- Estimez le temps nécessaire pour réaliser ce laboratoire
   - Découpez le travail en tâches pour faciliter l'estimation
-- A la fin du rapport, comparez le temps estimé avec le temps réellement passé:
-  | Tâche | Temps estimé | Temps réel | Commentaire |
-  |-------|--------------|------------|-------------|
-  | ... | 30m | 45m | ... |
-  | ... | ... | ... | ... |
-  | Total | 2h | 1h30 | ... |
+- Lorsque vous aurez terminé le laboratoire, comparez le temps estimé avec le temps réellement passé
+
+| Tâche      | Temps estimé | Temps réel | Commentaire |
+| ---------- | ------------ | ---------- | ----------- |
+| Estimation | 10m          | 15m        | ...         |
+| ...        | ...          | ...        | ...         |
+| Total      | 2h           | 1h30       | ...         |
 
 ### Utiliser minikube
 
@@ -84,9 +85,7 @@ Déployez l'application sur Kubernetes en utilisant le dashboard.
       - `POSTGRES_PASSWORD` : `postgres`
       - `ROOT_PATH`: `/api`
 - Créez un ingress
-
   - `Create from input`
-
     ```yaml
     apiVersion: networking.k8s.io/v1
     kind: Ingress
@@ -114,7 +113,6 @@ Déployez l'application sur Kubernetes en utilisant le dashboard.
                     port:
                       number: 80
     ```
-
 - Vous pourrez accéder à l'application sur http://127.0.0.1/
 
 #### CLI
@@ -125,42 +123,28 @@ Déployez l'application sur Kubernetes en utilisant le dashboard.
   - On devra pouvoir déployer ou mettre à jour toute l'application avec `kubectl apply -f deployment.yaml`
 - Déployez votre application sur un nouveau [namespace](https://kubernetes.io/docs/tasks/administer-cluster/namespaces/)
 
-### Google Cloud
+### Cluster du cours
 
-::: danger Attention
+Il faut être sur le réseau de l'HEIG-VD pour accéder au cluster Kubernetes du cours.  
+Au besoin, utilisez un VPN : https://vpn.heig-vd.ch
 
-La consommation des ressources sur Google Cloud est payante à la minute. Vérifiez que vous avez bien supprimé toutes vos ressources après avoir terminé ce laboratoire ou lors d'une pause prolongée.
+- Rancher : https://rancher.k8s.heig-vd.blueur.com
+- Dashboard : https://dashboard.k8s.heig-vd.blueur.com
 
-:::
+Déployez votre application sur le cluster Kubernetes du cours.
 
-- Créez un compte Google Cloud avec votre adresse email HEIG-VD
-- Installez [gcloud CLI](https://cloud.google.com/sdk/docs/install?hl=fr) sur votre machine
-  - `gcloud init`
-    - Cloud project : `heig-vd-devops`
-    - Google Compute Engine zone : `europe-west6-b`
-  - `gcloud -v`
-- [Accéder au cluster](https://cloud.google.com/kubernetes-engine/docs/how-to/cluster-access-for-kubectl?hl=fr)
-  - Installez le plugin GKE `gcloud components install gke-gcloud-auth-plugin`
-    - `gke-gcloud-auth-plugin --version`
-- Configurez votre cluster `gcloud container clusters get-credentials heig-vd-dop-cluster --region=europe-west6`
-- Créez un nouveau namespace (avec votre nom) et effectuez les déploiements suivants dessus car le cluster est partagé
-- Déployez une application d'exemple `kubectl apply -f https://storage.googleapis.com/minikube-site-examples/ingress-example.yaml`
-  - Accédez au [dashboard](https://console.cloud.google.com/kubernetes/list/overview?project=heig-vd-devops)
-    - Dans le menu de gauche, sous `Kubernetes Engine`, cliquez sur `Services & Ingress`
-    - Vous devriez voir (dans le menu tabulaire `Ingress`) un ingress `example-ingress` avec une IP externe
-    - Vous pourrez accéder à l'application sur cette IP (le déploiement prend plusieurs minutes)
-- Pour supprimer votre déploiement, utilisez `kubectl delete -f https://storage.googleapis.com/minikube-site-examples/ingress-example.yaml`
+#### Kubectl
 
-Essayez aussi de déployer votre application sur Google Cloud.
+Pour configurer votre `kubectl` local afin de pouvoir accéder au cluster Kubernetes du cours : https://ranchermanager.docs.rancher.com/how-to-guides/new-user-guides/manage-clusters/access-clusters/use-kubectl-and-kubeconfig
 
-Pour utiliser votre propose cluster Kubernetes, vous pouvez suivre les instructions suivantes (vous pouvez tout faire avec le dashboard):
-- [Créez un nouveau projet](https://developers.google.com/workspace/guides/create-project?hl=fr)
-- [Activer le cluster Kubernetes sur votre projet](https://cloud.google.com/kubernetes-engine/docs/how-to/creating-an-autopilot-cluster?hl=fr)
-  - Utilisez la région `europe-west6` qui est située à Zurich
+Mettez à jours votre fichier `~/.kube/config` avec les informations de votre cluster : https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/#file-references
 
 ### Contextes
 
 Pour pouvoir utiliser plusieurs clusters Kubernetes, on peut utiliser des [contextes](https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/).
 
-- Lister les contextes: `kubectl config get-contexts`
-- Changer de contexte: `kubectl config use-context <context-name>`
+Pour changer de contexte, utilisez la commande `kubectl config use-context <context>` (et pour lister `kubectl config get-contexts`).
+
+Vous pouvez aussi changer de contexte avec [Docker Desktop](https://docs.docker.com/desktop/kubernetes/#switch-between-clusters)
+
+Une autre option est d'utiliser l'[extension VS Code Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools)

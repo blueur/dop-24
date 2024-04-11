@@ -15,7 +15,7 @@ import TabItem from '@theme/TabItem';
   - Rapport individuel en Markdown à rendre avant le prochain cours
   - Nom du fichier : `report.md` à la racine du répertoire
 - Devoir sur Cyberlearn : mettre le lien de la pull request GitLab dans le champ texte
-- Délai: 2 semaine
+- Délai: 2 semaines
 
 ## Tâches
 

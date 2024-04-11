@@ -52,7 +52,7 @@ https://kubernetes.io/docs/concepts/overview/ <!-- .element: class="reference" t
 
 ### Docker Swarm
 
-![](https://docs.docker.com/engine/swarm/images/swarm-diagram.png)
+![](https://docs.docker.com/engine/swarm/images/swarm-diagram.webp)
 
 https://docs.docker.com/engine/swarm/how-swarm-mode-works/nodes/ <!-- .element: class="reference" target="_blank" -->
 
@@ -69,7 +69,7 @@ https://docs.docker.com/engine/swarm/how-swarm-mode-works/nodes/ <!-- .element: 
 
 ### Kubernetes
 
-![](https://upload.wikimedia.org/wikipedia/commons/b/be/Kubernetes.png) <!-- .element: style="height: var(--slides-height)" -->
+![](https://upload.wikimedia.org/wikipedia/commons/b/be/Kubernetes.png) <!-- .element: style="height: 512px" -->
 
 <p class="reference">
   <a href="https://commons.wikimedia.org/wiki/File:Kubernetes.png">Khtan66</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
@@ -114,7 +114,7 @@ https://access.redhat.com/documentation/en-us/openshift_container_platform/4.7/h
 
 ### Rancher
 
-![](https://ranchermanager.docs.rancher.com/assets/images/rancher-architecture-separation-of-rancher-server-b32508a12beee49d72836caa5469e585.svg) <!-- .element: style="height: var(--slides-height)" -->
+![](https://ranchermanager.docs.rancher.com/assets/images/rancher-architecture-separation-of-rancher-server-b32508a12beee49d72836caa5469e585.svg) <!-- .element: style="height: 512px" -->
 
 https://ranchermanager.docs.rancher.com/reference-guides/rancher-manager-architecture/architecture-recommendations <!-- .element: class="reference" target="_blank" -->
 
@@ -122,7 +122,7 @@ https://ranchermanager.docs.rancher.com/reference-guides/rancher-manager-archite
 
 ### Rancher
 
-![](https://www.rancher.com/assets/img/logos/screen2-thumbnail-suse.svg) <!-- .element: style="height: var(--slides-height)" -->
+![](https://www.rancher.com/assets/img/logos/screen2-thumbnail-suse.svg) <!-- .element: style="height: 512px" -->
 
 https://www.rancher.com/why-rancher <!-- .element: class="reference" target="_blank" -->
 
@@ -134,7 +134,7 @@ https://www.rancher.com/why-rancher <!-- .element: class="reference" target="_bl
 
 ## Kubernetes
 
-![](https://www.cncf.io/wp-content/uploads/2020/09/Kubernetes-architecture-diagram-1-1.png) <!-- .element: style="height: var(--slides-height)" -->
+![](https://www.cncf.io/wp-content/uploads/2020/09/Kubernetes-architecture-diagram-1-1.png) <!-- .element: style="height: 512px" -->
 
 https://www.cncf.io/blog/2019/08/19/how-kubernetes-works/ <!-- .element: class="reference" target="_blank" -->
 
@@ -217,7 +217,7 @@ spec:
 
 ### Service
 
-![](https://kubernetes.io/docs/tutorials/kubernetes-basics/public/images/module_04_labels.svg) <!-- .element: style="height: var(--slides-height)" -->
+![](https://kubernetes.io/docs/tutorials/kubernetes-basics/public/images/module_04_labels.svg) <!-- .element: style="height: 512px" -->
 
 https://kubernetes.io/docs/tutorials/kubernetes-basics/expose/expose-intro/ <!-- .element: class="reference" target="_blank" -->
 
@@ -264,7 +264,7 @@ spec:
 
 #### Readiness Probe
 
-![](https://storage.googleapis.com/gweb-cloudblog-publish/original_images/google-kubernetes-probe-readiness6ktf.GIF) <!-- .element: style="height: var(--slides-height)" -->
+![](https://storage.googleapis.com/gweb-cloudblog-publish/original_images/google-kubernetes-probe-readiness6ktf.GIF) <!-- .element: style="height: 512px" -->
 
 https://cloud.google.com/blog/products/containers-kubernetes/kubernetes-best-practices-setting-up-health-checks-with-readiness-and-liveness-probes <!-- .element: class="reference" target="_blank" -->
 
@@ -272,7 +272,7 @@ https://cloud.google.com/blog/products/containers-kubernetes/kubernetes-best-pra
 
 #### Liveness Probe
 
-![](https://storage.googleapis.com/gweb-cloudblog-publish/original_images/google-kubernetes-probe-livenessae14.GIF) <!-- .element: style="height: var(--slides-height)" -->
+![](https://storage.googleapis.com/gweb-cloudblog-publish/original_images/google-kubernetes-probe-livenessae14.GIF) <!-- .element: style="height: 512px" -->
 
 https://cloud.google.com/blog/products/containers-kubernetes/kubernetes-best-practices-setting-up-health-checks-with-readiness-and-liveness-probes <!-- .element: class="reference" target="_blank" -->
 

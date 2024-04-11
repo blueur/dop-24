@@ -47,9 +47,17 @@ div.reveal {
   p:has(> .reference) {
     line-height: 0.4;
   }
+  pre {
+    padding: inherit;
+
+    tr {
+      border: inherit
+    }
+  }
   strong {
     color: var(--ifm-color-primary);
   }
+  
 
   .code-wrapper {
     width: var(--slide-width);
