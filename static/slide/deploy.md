@@ -4,7 +4,7 @@ DevOps
 
 ---
 
-Comment automatiser les déploiements ?
+Comment **automatiser** les **déploiements** ?
 
 → Reproductibilité <!-- .element: class="fragment" -->
 
@@ -16,7 +16,7 @@ Comment automatiser les déploiements ?
 
 ## Infrastructure-as-Code
 
-- &shy;<!-- .element: class="fragment" --> IaC
+- &shy;<!-- .element: class="fragment" --> **IaC**
 - &shy;<!-- .element: class="fragment" --> **Définition** de l'infrastructure dans des **fichiers**
 - &shy;<!-- .element: class="fragment" --> Gestion de **version** des fichiers
 - &shy;<!-- .element: class="fragment" --> **Automatisation** de la **création** de l'infrastructure

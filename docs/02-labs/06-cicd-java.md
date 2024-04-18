@@ -9,25 +9,26 @@
 
 ## Rendu
 
-- Rapport individuel en **PDF** sur Cyberlearn
-  - Nom du fichier: `lab06-cicd-java-{nom}.pdf`
-  - Délai: 1 semaine
-  - **Laboratoire noté**
-- Mettez tout votre travail sur une branche `feature/06-cicd-java` et faites une merge request (MR) sur `main` en m'ajoutant comme reviewer
-- Ajoutez un lien vers votre repository dans votre rapport
+- GitHub Classroom : https://classroom.github.com/a/Y_FXjsYh
+  - Rapport individuel en Markdown à rendre avant le prochain cours
+  - Nom du fichier : `report.md` à la racine du répertoire
+- Devoir sur Cyberlearn : mettre le lien de la pull request GitLab dans le champ texte
+- Délai: 1 semaine
+- **Laboratoire noté**
 
 ## Tâches
 
 ### Estimer son travail
 
-- Estimez le temps total nécessaire pour réaliser ce laboratoire
+- Estimez le temps nécessaire pour réaliser ce laboratoire
   - Découpez le travail en tâches pour faciliter l'estimation
-- A la fin du rapport, comparez le temps estimé avec le temps réellement passé:
-  | Tâche | Temps estimé | Temps réel | Commentaire |
-  |-------|--------------|------------|-------------|
-  | ... | 30m | 45m | ... |
-  | ... | ... | ... | ... |
-  | Total | 2h | 1h30 | ... |
+- Lorsque vous aurez terminé le laboratoire, comparez le temps estimé avec le temps réellement passé
+
+| Tâche      | Temps estimé | Temps réel | Commentaire |
+| ---------- | ------------ | ---------- | ----------- |
+| Estimation | 10m          | 15m        | ...         |
+| ...        | ...          | ...        | ...         |
+| Total      | 2h           | 1h30       | ...         |
 
 ### Prérequis
 
