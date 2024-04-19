@@ -38,7 +38,6 @@
 ### Préparation
 
 - Forker le repository suivant : https://gitlab.com/blueur/heig-vd-devops-java
-- Créez une nouvelle branche `feature/06-cicd-java` et travaillez sur cette branche
 - Cloner votre repository sur votre machine
 - Empaquetez l'application avec Maven : `mvn package`
 - Lancez l'application : `mvn spring-boot:run`
@@ -68,22 +67,14 @@
 
 ## Evaluation
 
-### Critères de réussite
-
-Pour atteindre le 4 :
-
-- Le rapport est complet et bien structuré
-- Le rendu sur GitLab est correct et dans les temps
-- Docker Compose est fonctionnel
-- Le pipeline CI/CD est fonctionnel
-- Le déploiement sur Kubernetes est fonctionnel
-
-### Critères d'amélioration
-
-Pour atteindre le 6 :
-
-- Application des bonnes pratiques
-- Amélioration de la CI/CD avec le code coverage, le SAST, le dependency scanning, etc. en indiquant comment les utiliser
-- Déploiement de l'application sur [HEIG-VD DevOps](https://console.cloud.google.com/kubernetes/list/overview?project=heig-vd-devops) sous le namespace `{votre nom}` grâce à votre fichier `deployment.yaml`
-- Déploiement automatique sur Kubernetes à la fin du pipeline CI/CD pour chaque commit sur `main`
-- Toute amélioration de votre pipeline CI/CD est la bienvenue
+| Critère     | Minimal (-0.5 par critère manquant)                                                             | Bon (+0.2)                                                                            | Excellent (+0.4)                                            |
+| ----------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Délai       | Le rendu est dans les temps                                                                     |                                                                                       |                                                             |
+| Rapport     | Le rapport répond aux questions posées                                                          | Le rapport est complet et bien structuré                                              |                                                             |
+| Docker      | Le Docker Compose est fonctionnel avec `docker compose up`                                      | Application des bonnes pratiques                                                      | Optimisation                                                |
+| CI/CD       | La pipeline CI/CD est fonctionnel (succès)                                                      | Application des bonnes pratiques                                                      | Optimisation                                                |
+| Kubernetes  | Le déploiement sur Kubernetes est fonctionnel grâce au fichier `deployment.yaml` (pas d'erreur) | Application des bonnes pratiques                                                      | Déploiement automatique sur Kubernetes                      |
+| Code        | Le code est fonctionnel                                                                         | Le code est propre                                                                    | Le code est propre et bien documenté                        |
+| Déploiement |                                                                                                 | Déployé sur le cluster k8s de la classe sous le namespace `{votre nom}`               | Le déploiement est automatisé pour chaque commit sur `main` |
+| Analyse     |                                                                                                 | Amélioration de la CI/CD avec le code coverage, le SAST, le dependency scanning, etc. | Explication de leur utilisation                             |
+| Bonus       |                                                                                                 | Toute autre amélioration                                                              | Toute autre amélioration avancée                            |
