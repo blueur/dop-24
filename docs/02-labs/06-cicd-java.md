@@ -67,7 +67,7 @@
 
 ## Evaluation
 
-| Critère     | Minimal (-0.5 par critère manquant)                                                             | Bon (+0.2)                                                                            | Excellent (+0.4)                                            |
+| Critère     | Minimal (-0.5 par critère manquant)                                                             | Bon (+0.15)                                                                           | Excellent (+0.3)                                            |
 | ----------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
 | Délai       | Le rendu est dans les temps                                                                     |                                                                                       |                                                             |
 | Rapport     | Le rapport répond aux questions posées                                                          | Le rapport est complet et bien structuré                                              |                                                             |
