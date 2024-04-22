@@ -13,7 +13,7 @@
   - Rapport individuel en Markdown à rendre avant le prochain cours
   - Nom du fichier : `report.md` à la racine du répertoire
 - Devoir sur Cyberlearn : mettre le lien de la pull request GitLab dans le champ texte
-- Délai: 1 semaine
+- Délai: 2 semaines
 - **Laboratoire noté**
 
 ## Tâches
@@ -67,14 +67,15 @@
 
 ## Evaluation
 
-| Critère     | Minimal (-0.5 par critère manquant)                                                             | Bon (+0.15)                                                                           | Excellent (+0.3)                                            |
-| ----------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Délai       | Le rendu est dans les temps                                                                     |                                                                                       |                                                             |
-| Rapport     | Le rapport répond aux questions posées                                                          | Le rapport est complet et bien structuré                                              |                                                             |
-| Docker      | Le Docker Compose est fonctionnel avec `docker compose up`                                      | Application des bonnes pratiques                                                      | Optimisation                                                |
-| CI/CD       | La pipeline CI/CD est fonctionnel (succès)                                                      | Application des bonnes pratiques                                                      | Optimisation                                                |
-| Kubernetes  | Le déploiement sur Kubernetes est fonctionnel grâce au fichier `deployment.yaml` (pas d'erreur) | Application des bonnes pratiques                                                      | Déploiement automatique sur Kubernetes                      |
-| Code        | Le code est fonctionnel                                                                         | Le code est propre                                                                    | Le code est propre et bien documenté                        |
-| Déploiement |                                                                                                 | Déployé sur le cluster k8s de la classe sous le namespace `{votre nom}`               | Le déploiement est automatisé pour chaque commit sur `main` |
-| Analyse     |                                                                                                 | Amélioration de la CI/CD avec le code coverage, le SAST, le dependency scanning, etc. | Explication de leur utilisation                             |
-| Bonus       |                                                                                                 | Toute autre amélioration                                                              | Toute autre amélioration avancée                            |
+| Critère    | Minimal (-0.5 par critère manquant)                                                             | Bon (+0.15)                                                             | Excellent (+0.3)                     |
+| ---------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------ |
+| Délai      | Le rendu est dans les temps                                                                     |                                                                         |                                      |
+| Rapport    | Le rapport répond aux questions posées                                                          | Le rapport est complet et bien structuré                                |                                      |
+| Docker     | Le Docker Compose est fonctionnel avec `docker compose up`                                      | Application des bonnes pratiques                                        | Optimisation                         |
+| CI/CD      | La pipeline CI/CD est fonctionnel (succès)                                                      | Conditions correctes                                                    | Application des bonnes pratiques     |
+| Kubernetes | Le déploiement sur Kubernetes est fonctionnel grâce au fichier `deployment.yaml` (pas d'erreur) | Déployé sur le cluster k8s de la classe sous le namespace `{votre nom}` | Application des bonnes pratiques     |
+| Code       | Le code est fonctionnel                                                                         | Le code est propre                                                      | Le code est propre et bien documenté |
+| Test       |                                                                                                 | Amélioration de la CI/CD avec l'unit test report                        | Explication de son utilisation       |
+| Coverage   |                                                                                                 | Amélioration de la CI/CD avec le code coverage                          | Explication de son utilisation       |
+| SAST       |                                                                                                 | Amélioration de la CI/CD avec le SAST                                   | Explication de son utilisation       |
+| Bonus      |                                                                                                 | Toute autre amélioration                                                | Toute autre amélioration avancée     |

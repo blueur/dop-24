@@ -32,7 +32,7 @@
 
 Déployer la démonstration suivante sur votre machine : https://opentelemetry.io/docs/demo/docker-deployment/
 
-::: tip Astuce
+:::tip Astuce
 Une version de la démonstration est déployée sur notre cluster Kubernetes :
 
 - Web store: http://otel-demo.k8s.heig-vd.blueur.com/
@@ -123,7 +123,7 @@ Suivre le scénario suivant : https://opentelemetry.io/docs/demo/scenarios/recom
   - Configurer l'exportation des metrics vers [Prometheus](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/exporter/prometheusexporter)
   - Vous pourrez observer les metrics `postgresql_*` dans Prometheus (et Grafana), par exemple `postgresql_commits_total` ou `postgresql_rows`
 
-::: tip Question
+:::tip Question
 
 Dans quels cas le collector est en mode [pull ou push](https://www.alibabacloud.com/blog/pull-or-push-how-to-select-monitoring-systems_599007) ?
 

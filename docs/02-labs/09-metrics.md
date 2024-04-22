@@ -63,7 +63,7 @@ Rafraîchissez la page des métriques. Expliquez le fonctionnement de Prometheus
 - Ajoutez Prometheus à votre Docker Compose
 - Vérifiez que les métriques sont bien collectées par Prometheus
 
-::: tip Astuce
+:::tip Astuce
 Vous pouvez utiliser les profiles pour activer/désactiver les services liés à l'observabilité : https://docs.docker.com/compose/profiles/
 :::
 

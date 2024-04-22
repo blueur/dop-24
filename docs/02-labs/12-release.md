@@ -34,11 +34,11 @@ Reprenez **votre** projet [HEIG-VD DevOps Java](https://gitlab.com/blueur/heig-v
 - Ajoutez le plugin [Maven Release Plugin](https://maven.apache.org/maven-release/maven-release-plugin/) à votre projet
 - Essayez de faire une release avec le plugin
 
-::: tip Question
+:::tip Question
 Que fait `mvn release:prepare` ?
 :::
 
-::: tip Question
+:::tip Question
 Que fait `mvn release:perform` ?
 :::
 
@@ -49,7 +49,7 @@ Que fait `mvn release:perform` ?
 
 Reprenez **votre** projet [HEIG-VD DevOps](https://gitlab.com/blueur/heig-vd-devops) pour ce laboratoire.
 
-::: warning Collaboration
+:::warning Collaboration
 Discussion en classe des solutions possibles pour créer des releases
 :::
 
