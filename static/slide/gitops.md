@@ -10,7 +10,7 @@ DevOps + IaC + CD = GitOps
 
 ### Historique GitOps
 
-![](https://images.contentstack.io/v3/assets/blt300387d93dabf50e/bltdf27b275df1178ed/638885dce69df25504227389/Short-Line-Time-backWhite-2022v2.png)
+![](/img/Short-Line-Time-backWhite-2022v2.png)
 
 https://www.weave.works/technologies/gitops/ <!-- .element: class="reference" target="_blank" -->
 
@@ -32,7 +32,7 @@ https://www.weave.works/technologies/gitops/ <!-- .element: class="reference" ta
 
 ### Outils du GitOps
 
-![](https://images.contentstack.io/v3/assets/blt300387d93dabf50e/blte49dfe8068ea3667/6388864ba606ea3c93a4f53d/Guide-To-GitOps-Diagrams1.png) <!-- .element: style="height: var(--slides-height)" -->
+![](/img/Guide-To-GitOps-Diagrams1.png) <!-- .element: style="height: 512px" -->
 
 https://www.weave.works/technologies/gitops/ <!-- .element: class="reference" target="_blank" -->
 
