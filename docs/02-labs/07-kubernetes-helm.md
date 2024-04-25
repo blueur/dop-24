@@ -88,6 +88,14 @@ Pourquoi ?
 - Suivez les instructions de la [documentation](https://helm.sh/docs/chart_template_guide/getting_started/)
 - Modifiez le Helm chart pour déployer votre application
 
+### Créer un deuxième environnement
+
+Utilisez votre Helm chart pour déployer une deuxième instance de votre application dans un autre namespace en utilisant des valeurs différentes pour :
+
+- POSTGRES_USER
+- POSTGRES_DB
+- POSTGRES_PASSWORD
+
 ## Références
 
 - https://gitlab.com/blueur/heig-vd-devops
