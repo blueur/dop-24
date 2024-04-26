@@ -93,19 +93,20 @@ Déployez l'application sur Kubernetes en utilisant le dashboard.
       name: heig-vd-devops-ingress
       annotations:
         nginx.ingress.kubernetes.io/use-regex: "true"
-        nginx.ingress.kubernetes.io/rewrite-target: /$2
+        nginx.ingress.kubernetes.io/rewrite-target: /$1
     spec:
+      ingressClassName: nginx
       rules:
         - http:
             paths:
-              - path: /
-                pathType: Prefix
+              - path: /?(.*)
+                pathType: ImplementationSpecific
                 backend:
                   service:
                     name: frontend
                     port:
                       number: 80
-              - path: /api(/|$)(.*) # https://kubernetes.github.io/ingress-nginx/examples/rewrite/
+              - path: /api/?(.*)
                 pathType: ImplementationSpecific
                 backend:
                   service:
