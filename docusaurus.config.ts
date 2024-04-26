@@ -50,6 +50,11 @@ const config: Config = {
           position: "left",
         },
         {
+          to: "docs/tools",
+          html: "<i class='ph ph-wrench'></i> Outils",
+          position: "left",
+        },
+        {
           href: "https://github.com/blueur",
           position: "right",
           className: "ph ph-github-logo",
