@@ -57,7 +57,7 @@ https://platformengineering.org/talks-library/track-dora-devops-metrics-with-log
 
 ### Dashboard DORA
 
-![](https://storage.googleapis.com/gweb-cloudblog-publish/images/The_dashboard.max-1500x1500.jpg)
+![](https://storage.googleapis.com/gweb-cloudblog-publish/images/The_dashboard.max-1500x1500.jpg) <!-- .element: style="height: 512px" -->
 
 https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance <!-- .element: class="reference" target="_blank" -->
 
@@ -65,7 +65,7 @@ https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure
 
 ### Niveau de performance DORA
 
-![](https://storage.googleapis.com/gweb-cloudblog-publish/images/Calculating_the_metrics_frOhcbp.max-2000x2000.jpg)
+![](https://storage.googleapis.com/gweb-cloudblog-publish/images/Calculating_the_metrics_frOhcbp.max-2000x2000.jpg) <!-- .element: style="height: 512px" -->
 
 https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance <!-- .element: class="reference" target="_blank" -->
 

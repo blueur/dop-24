@@ -51,13 +51,15 @@ div.reveal {
     padding: inherit;
 
     tr {
-      border: inherit
+      border: inherit;
     }
   }
   strong {
     color: var(--ifm-color-primary);
   }
-  
+  table {
+    display: unset;
+  }
 
   .code-wrapper {
     width: var(--slide-width);
