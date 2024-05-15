@@ -43,7 +43,7 @@ https://www.devsecops.org/
 
 #### Purple Team
 
-![](https://sf-cdn.iansresearch.com/sitefinity/images/default-source/blogs/blog-features/red-blue-purple-teams-who-does-what.png) <!-- .element: style="height: var(--slides-height)" -->
+![](https://sf-cdn.iansresearch.com/sitefinity/images/default-source/blogs/blog-features/red-blue-purple-teams-who-does-what.png) <!-- .element: style="height: 512px" -->
 https://www.iansresearch.com/resources/all-blogs/post/security-blog/2022/04/19/understand-the-roles-of-red-blue-and-purple-teams <!-- .element: class="reference" target="_blank" -->
 
 ---
@@ -105,5 +105,5 @@ https://learn.microsoft.com/fr-fr/azure/cloud-adoption-framework/secure/devsecop
 
 ## Selon Atlassian
 
-![](https://wac-cdn.atlassian.com/dam/jcr:5f26d67b-bed6-4be1-912b-4032de4d06b0/devsecops-diagram.png) <!-- .element: style="height: var(--slides-height)" -->
+![](https://wac-cdn.atlassian.com/dam/jcr:5f26d67b-bed6-4be1-912b-4032de4d06b0/devsecops-diagram.png) <!-- .element: style="height: 512px" -->
 https://www.atlassian.com/fr/devops/devops-tools/devsecops-tools <!-- .element: class="reference" target="_blank" -->

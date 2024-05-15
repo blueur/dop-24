@@ -51,6 +51,7 @@ https://xkcd.com/1406 <!-- .element: class="reference" target="_blank" -->
 #### Trace & Span
 
 ![](https://miro.medium.com/v2/resize:fit:4800/format:webp/1*Yu0bCux_sulHPy6MhT9Ytg.png)
+
 https://medium.com/nikeengineering/hit-the-ground-running-with-distributed-tracing-core-concepts-ff5ad47c7058 <!-- .element: class="reference" target="_blank" -->
 
 - &shy;<!-- .element: class="fragment" --> **Trace** : ensemble de **spans** (étapes d'une requête)
@@ -61,6 +62,7 @@ https://medium.com/nikeengineering/hit-the-ground-running-with-distributed-traci
 
 ![](https://opentracing.io/img/OTHT_0.png)
 ![](https://opentracing.io/img/OTHT_1.png)
+
 https://opentracing.io/docs/best-practices/instrumenting-your-application/ <!-- .element: class="reference" target="_blank" -->
 
 ---
@@ -86,14 +88,16 @@ https://opentracing.io/docs/best-practices/instrumenting-your-application/ <!-- 
 
 ### Architecture
 
-![](https://training.promlabs.com/static/prometheus-architecture-81d1251aedaf0676f61ad31e4cf19363.svg) <!-- .element: style="height: var(--slides-height)" -->
+![](https://training.promlabs.com/static/prometheus-architecture-81d1251aedaf0676f61ad31e4cf19363.svg) <!-- .element: style="height: 512px" -->
+
 https://training.promlabs.com/training/introduction-to-prometheus/prometheus-an-overview/system-architecture <!-- .element: class="reference" target="_blank" -->
 
 ---
 
 ## Grafana
 
-![](https://grafana.com/media/docs/grafana/dashboards-overview/complex-dashboard-example.png) <!-- .element: style="height: var(--slides-height)" -->
+![](https://grafana.com/media/docs/grafana/dashboards-overview/complex-dashboard-example.png) <!-- .element: style="height: 512px" -->
+
 https://grafana.com/docs/grafana/latest/fundamentals/dashboards-overview/ <!-- .element: class="reference" target="_blank" -->
 
 ---
@@ -113,22 +117,38 @@ https://grafana.com/docs/grafana/latest/fundamentals/dashboards-overview/ <!-- .
 
 ## Service Discovery
 
-![](https://www.nginx.com/wp-content/uploads/2016/04/Richardson-microservices-part4-1_difficult-service-discovery.png) <!-- .element: style="height: var(--slides-height)" -->
+![](https://www.nginx.com/wp-content/uploads/2016/04/Richardson-microservices-part4-1_difficult-service-discovery.png) <!-- .element: style="height: 512px" -->
+
 https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/ <!-- .element: class="reference" target="_blank" -->
 
 ---
 
-## Client‑Side Discovery
+### Client‑Side Discovery
 
-![](https://www.nginx.com/wp-content/uploads/2016/04/Richardson-microservices-part4-2_client-side-pattern.png) <!-- .element: style="height: var(--slides-height)" -->
+![](https://www.nginx.com/wp-content/uploads/2016/04/Richardson-microservices-part4-2_client-side-pattern.png) <!-- .element: style="height: 512px" -->
+
 https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/ <!-- .element: class="reference" target="_blank" -->
 
 ---
 
 ### Server‑Side Discovery
 
-![](https://www.nginx.com/wp-content/uploads/2016/04/Richardson-microservices-part4-3_server-side-pattern.png) <!-- .element: style="height: var(--slides-height)" -->
+![](https://www.nginx.com/wp-content/uploads/2016/04/Richardson-microservices-part4-3_server-side-pattern.png) <!-- .element: style="height: 512px" -->
+
 https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/ <!-- .element: class="reference" target="_blank" -->
+
+---
+
+## Pull vs Push
+
+- **Pull**
+  - &shy;<!-- .element: class="fragment" --> L'APM **récupère** les métriques de chaque service
+  - &shy;<!-- .element: class="fragment" --> Idéal pour les métriques régulières (CPU, RAM, etc.)
+  - &shy;<!-- .element: class="fragment" --> Par exemple : Prometheus
+- **Push**
+  - &shy;<!-- .element: class="fragment" --> Chaque service **envoie** ses métriques à l'APM
+  - &shy;<!-- .element: class="fragment" --> Envoi à la demande (logs, traces, etc.)
+  - &shy;<!-- .element: class="fragment" --> Par exemple : Beats
 
 ---
 
@@ -137,7 +157,8 @@ https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/ <!
 - &shy;<!-- .element: class="fragment" --> Nombre d'**éléments distincts** dans un ensemble
 - &shy;<!-- .element: class="fragment" --> Métriques : **Nombre** de **valeurs** d'un **attribut**
 
-![](https://grafana.com/static/assets/img/blog/cardinality-spikes-diagram.jpg) <!-- .element: class="fragment" style="height: 420px" -->
+![](https://grafana.com/static/assets/img/blog/cardinality-spikes-diagram.jpg) <!-- .element: class="fragment" style="height: 400px" -->
+
 https://grafana.com/blog/2022/02/15/what-are-cardinality-spikes-and-why-do-they-matter/ <!-- .element: class="reference" target="_blank" -->
 
 ---
@@ -145,6 +166,7 @@ https://grafana.com/blog/2022/02/15/what-are-cardinality-spikes-and-why-do-they-
 ### High cardinality
 
 ![](https://victoriametrics.com/blog/cardinality-explorer/cardinality_calculation.png)
+
 https://victoriametrics.com/blog/cardinality-explorer/ <!-- .element: class="reference" target="_blank" -->
 
 ---
@@ -152,6 +174,7 @@ https://victoriametrics.com/blog/cardinality-explorer/ <!-- .element: class="ref
 ### VM → container
 
 ![](https://chronosphere.io/wp-content/uploads/2023/10/cardinality-growth-1024x576.webp)
+
 https://chronosphere.io/learn/what-is-high-cardinality/ <!-- .element: class="reference" target="_blank" -->
 
 ---
@@ -167,6 +190,7 @@ https://chronosphere.io/learn/what-is-high-cardinality/ <!-- .element: class="re
 ---
 
 ![](https://grafana.com/static/assets/img/blog/grafana-cardinality-metrics-quadrants.png)
+
 https://grafana.com/blog/2022/10/20/how-to-manage-high-cardinality-metrics-in-prometheus-and-kubernetes/ <!-- .element: class="reference" target="_blank" -->
 
 ---
@@ -189,6 +213,7 @@ https://grafana.com/blog/2022/10/20/how-to-manage-high-cardinality-metrics-in-pr
   - &shy;<!-- .element: class="fragment" --> **Not sampled** trace/span : ignoré
 
 ![](https://opentelemetry.io/docs/concepts/sampling/traces-venn-diagram.svg) <!-- .element: class="fragment" style="height: 360px" -->
+
 https://opentelemetry.io/docs/concepts/sampling/ <!-- .element: class="reference" target="_blank" -->
 
 ---
@@ -196,6 +221,7 @@ https://opentelemetry.io/docs/concepts/sampling/ <!-- .element: class="reference
 #### Head vs Tail Sampling
 
 ![](https://cdn.thenewstack.io/media/2020/04/eb412cd9-screen-shot-2020-04-07-at-7.12.38-pm-1024x280.png)
+
 https://thenewstack.io/what-you-need-to-know-about-distributed-tracing-and-sampling/ <!-- .element: class="reference" target="_blank" -->
 
 - &shy;<!-- .element: class="fragment" --> **Head sampling** : décider au début de la requête
@@ -216,9 +242,11 @@ https://opentelemetry.io/docs/concepts/semantic-conventions/
 ---
 
 ![](https://imgs.xkcd.com/comics/iso_8601.png)
+
 https://xkcd.com/1179 <!-- .element: class="reference" target="_blank" -->
 
 ---
 
 ![](https://imgs.xkcd.com/comics/standards.png)
+
 https://xkcd.com/927 <!-- .element: class="reference" target="_blank" -->
