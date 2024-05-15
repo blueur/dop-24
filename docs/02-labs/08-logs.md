@@ -36,6 +36,11 @@ Déployer un Docker Compose avec EFK (Elasticsearch, Fluentd, Kibana) et un serv
 
 - Tutoriel (plus à jour) sur https://docs.fluentd.org/container-deployment/docker-compose
 - Mettre à jour le tutoriel et le rendre fonctionnel
+- Endpoints :
+  - Serveur web : http://localhost:80
+  - Kibana : http://localhost:5601
+  - Elasticsearch : http://localhost:9200
+    - Affiche des informations sur le cluster
 
 <details>
   <summary>
@@ -62,6 +67,12 @@ Vérifier que les logs sont bien parsés dans Kibana.
     Solution
   </summary>
 ```
+<source>
+  @type forward
+  port 24224
+  bind 0.0.0.0
+</source>
+
 <filter web.log>
   @type parser
   key_name log
@@ -70,6 +81,27 @@ Vérifier que les logs sont bien parsés dans Kibana.
     @type apache2
   </parse>
 </filter>
+
+<match web.log>
+  @type copy
+
+  <store>
+    @type elasticsearch
+    host elasticsearch
+    port 9200
+    logstash_format true
+    logstash_prefix fluentd
+    logstash_dateformat %Y%m%d
+    include_tag_key true
+    type_name access_log
+    tag_key @log_name
+    flush_interval 1s
+  </store>
+
+  <store>
+    @type stdout
+  </store>
+</match>
 ```
 </details>
 
