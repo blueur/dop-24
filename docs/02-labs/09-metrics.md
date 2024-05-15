@@ -8,24 +8,26 @@
 
 ## Rendu
 
-- Rapport individuel sur Cyberlearn
-  - Nom du fichier: `lab10-metrics-{nom}.pdf`
-  - Délai: 1 semaine
-- Code sur GitHub Classroom : https://classroom.github.com/a/lOwfxM_8
-- Créez une MR `feature/lab10-metrics` sur `main` en m'ajoutant comme reviewer et mettez le lien dans le rapport
+- GitHub Classroom : https://classroom.github.com/a/Wy7jIiJU
+  - Rapport individuel en Markdown à rendre avant le prochain cours
+  - Nom du fichier : `report.md` à la racine du répertoire
+  - Première partie : Code directement sur GitHub Classroom
+  - Deuxième partie : MR sur votre projet [HEIG-VD DevOps](https://gitlab.com/blueur/heig-vd-devops)
+- Délai: 1 semaine
 
 ## Tâches
 
 ### Estimer son travail
 
-- Estimez le temps total nécessaire pour réaliser ce laboratoire
+- Estimez le temps nécessaire pour réaliser ce laboratoire
   - Découpez le travail en tâches pour faciliter l'estimation
-- A la fin du rapport, comparez le temps estimé avec le temps réellement passé:
-  | Tâche | Temps estimé | Temps réel | Commentaire |
-  |-------|--------------|------------|-------------|
-  | ... | 30m | 45m | ... |
-  | ... | ... | ... | ... |
-  | Total | 2h | 1h30 | ... |
+- Lorsque vous aurez terminé le laboratoire, comparez le temps estimé avec le temps réellement passé
+
+| Tâche      | Temps estimé | Temps réel | Commentaire |
+| ---------- | ------------ | ---------- | ----------- |
+| Estimation | 10m          | 15m        | ...         |
+| ...        | ...          | ...        | ...         |
+| Total      | 2h           | 1h30       | ...         |
 
 ### Prometheus et Grafana sur Docker Compose
 
