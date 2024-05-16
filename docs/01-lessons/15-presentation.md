@@ -18,12 +18,17 @@
   - AWS
   - Azure
   - GCP
+- Présentation et démo de
+  - Terraform
+  - Ansible
+  - OpenSLO
+- NetDevOps
 
 Vous pouvez aussi proposer un sujet de votre choix.
 
 ## Déroulement
 
-- 20 minutes de présentation
+- 10 minutes de présentation
 - 10 minutes de questions
 
 ## Évaluation
