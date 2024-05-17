@@ -10,24 +10,26 @@
 
 ## Rendu
 
-- Rapport individuel en **PDF** sur Cyberlearn
-  - Nom du fichier: `lab12-observability-{nom}.pdf`
-  - Délai: 2 semaines
-- Code sur GitHub Classroom : https://classroom.github.com/a/OZNR4D0W
+- GitHub Classroom : https://classroom.github.com/a/-lxidR0U
+  - Rapport individuel en Markdown à rendre avant le prochain cours
+  - Nom du fichier : `report.md` à la racine du répertoire
+  - Code directement sur GitHub Classroom
+- Délai: 2 semaines
   - Rendu intermédiaire après 1 semaine pour avoir un retour sur le travail effectué
 
 ## Tâches
 
 ### Estimer son travail
 
-- Estimez le temps total nécessaire pour réaliser ce laboratoire
+- Estimez le temps nécessaire pour réaliser ce laboratoire
   - Découpez le travail en tâches pour faciliter l'estimation
-- A la fin du rapport, comparez le temps estimé avec le temps réellement passé:
-  | Tâche | Temps estimé | Temps réel | Commentaire |
-  |-------|--------------|------------|-------------|
-  | ... | 30m | 45m | ... |
-  | ... | ... | ... | ... |
-  | Total | 2h | 1h30 | ... |
+- Lorsque vous aurez terminé le laboratoire, comparez le temps estimé avec le temps réellement passé
+
+| Tâche      | Temps estimé | Temps réel | Commentaire |
+| ---------- | ------------ | ---------- | ----------- |
+| Estimation | 10m          | 15m        | ...         |
+| ...        | ...          | ...        | ...         |
+| Total      | 2h           | 1h30       | ...         |
 
 ### Mise en place
 

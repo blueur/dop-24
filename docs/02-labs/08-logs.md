@@ -103,6 +103,9 @@ Vérifier que les logs sont bien parsés dans Kibana.
   </store>
 </match>
 ```
+
+https://github.com/blueur/efk/tree/feature/parser-web
+
 </details>
 
 Créer un tableau de bord dans Kibana :

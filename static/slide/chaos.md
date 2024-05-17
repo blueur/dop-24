@@ -73,7 +73,7 @@ Expérimenter en 4 étapes :
 
 ## Simian Army (Netflix sur AWS)
 
-- &shy;<!-- .element: class="fragment" --> **Janitor Monkey**
+- **Janitor Monkey**
   - supprime les ressources **inutilisées**
 - &shy;<!-- .element: class="fragment" --> **Security Monkey**
   - Conformity Monkey pour des **vulnérabilités** de sécurité

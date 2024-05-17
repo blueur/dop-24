@@ -13,7 +13,7 @@ https://www.dynatrace.com/news/blog/what-is-devsecops/ <!-- .element: class="ref
 
 ## DevSecOps
 
-- &shy;<!-- .element: class="fragment" --> **À l'époque** : Équipe sécurité **à part** et en **fin** de cycle
+- &shy;<!-- .element: class="fragment" --> **À l'époque** : Équipe sécurité **à part entière** et en **fin** de cycle
 - &shy;<!-- .element: class="fragment" --> Sécurité **intégrée** au processus DevOps
 - &shy;<!-- .element: class="fragment" --> **Tout le monde** responsable de la sécurité
 - &shy;<!-- .element: class="fragment" --> **Automatisation** des tests de sécurité
@@ -106,4 +106,5 @@ https://learn.microsoft.com/fr-fr/azure/cloud-adoption-framework/secure/devsecop
 ## Selon Atlassian
 
 ![](https://wac-cdn.atlassian.com/dam/jcr:5f26d67b-bed6-4be1-912b-4032de4d06b0/devsecops-diagram.png) <!-- .element: style="height: 512px" -->
+
 https://www.atlassian.com/fr/devops/devops-tools/devsecops-tools <!-- .element: class="reference" target="_blank" -->
