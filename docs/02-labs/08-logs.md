@@ -51,7 +51,9 @@ Déployer un Docker Compose avec EFK (Elasticsearch, Fluentd, Kibana) et un serv
   - https://www.elastic.co/guide/en/elasticsearch/reference/8.11/security-settings.html#general-security-settings
 </details>
 
-Exemple fonctionnel : https://github.com/blueur/efk
+:::tip Exemple
+https://github.com/blueur/efk
+:::
 
 ### Parser les logs
 
@@ -113,7 +115,7 @@ Créer un tableau de bord dans Kibana :
 - https://www.elastic.co/guide/en/kibana/current/create-a-dashboard-of-panels-with-web-server-data.html
 - Affiche la proportion des chemins (`path`) et des codes HTTP (`code`) dans les logs
 
-### EFK sur Kubernetes
+### Bonus : EFK sur Kubernetes
 
 Déployer EFK sur Kubernetes : https://docs.fluentd.org/container-deployment/kubernetes
 

@@ -69,6 +69,11 @@ Rafraîchissez la page des métriques. Expliquez le fonctionnement de Prometheus
 Vous pouvez utiliser les profiles pour activer/désactiver les services liés à l'observabilité : https://docs.docker.com/compose/profiles/
 :::
 
+:::tip Exemples
+https://github.com/blueur/prometheus  
+https://gitlab.com/blueur/heig-vd-devops/-/tree/feature/instrumentation
+:::
+
 ### Instrumenter Nginx
 
 Cherchez comment collecter les métriques du frontend (Nginx) avec Prometheus. Qu'est-ce qui est nécessaire pour que cela fonctionne ?
