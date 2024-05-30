@@ -46,6 +46,7 @@ http://localhost:8080
 - Dockeriser l'application
 - Créer un Docker Compose pour lancer l'application
   - `docker compose up`
+- Utiliser les [profiles](https://docs.docker.com/compose/profiles/) pour activer/désactiver les outils APM
 
 ### Instrumentation
 
@@ -94,22 +95,17 @@ Bonus :
 
 ## Evaluation
 
-### Critères de réussite
+|                           | Critères de base (-0.5/critère)                              | Critères complémentaires (+0.25/critère)                                                          |
+| ------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| Rendu                     | <ul><li>Le rendu est complet et dans les temps</li></ul>     |                                                                                                   |
+| Docker                    | <ul><li>Le Docker Compose est fonctionnel</li></ul>          | <ul><li>Bonne dockerisation</li><li>Utilisation des profiles</li></ul>                            |
+| Logs                      | <ul><li>Visualisation des logs dans Kibana</li></ul>         | <ul><li>Stacktraces regroupées</li><li>Dashboard</li></ul>                                        |
+| Métriques                 | <ul><li>Visualisation des métriques dans Grafana</li></ul>   | <ul><li>Gauge</li><li>Sums</li><li>Autre</li></ul>                                                |
+| Traces                    | <ul><li>Visualisation des traces dans Jaeger</li></ul>       | <ul><li>Visualisation des traces dans Zipkin</li><li>Comparaison avec Zipkin</li></ul>            |
+| Documentation (README.md) | <ul><li>Documentation des configurations manuelles</li></ul> | <ul><li>Bonne documentation de l'application</li><li>Bonne documentation des APM</li></ul>        |
+| Rapport                   |                                                              | <ul><li>Bonne explication de la démarche</li><li>Bonne explication des choix techniques</li></ul> |
+| Bonus                     |                                                              | <ul><li>Autre bonus</li></ul>                                                                     |
 
-Pour atteindre le 4 :
+Tous les critères de base doivent être validés pour avoir la note de 4.
 
-- Le rapport est complet et bien structuré
-- Le rendu sur GitHub Classroom est correct et dans les temps
-- Docker Compose est fonctionnel
-
-### Critères d'amélioration
-
-Pour atteindre le 6 :
-
-- Application des bonnes pratiques
-- Les points bonus mentionnés ci-dessus sont implémentés
-- Création de dashboards intéressants dans Kibana et Grafana
-- Ajout de métriques personnalisées
-- Bonne documentation sur l'utilisation des outils APM
-- Utiliser les [profiles](https://docs.docker.com/compose/profiles/) pour activer/désactiver les outils APM
-- Toute amélioration est la bienvenue
+Les critères complémentaires permettent d'atteindre la note de 6.

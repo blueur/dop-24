@@ -75,6 +75,12 @@ div.reveal {
   }
 }
 
+table {
+  ul {
+    margin-bottom: unset;
+  }
+}
+
 .current {
   scroll-margin-top: 32em;
   &.week {
