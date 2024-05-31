@@ -46,6 +46,9 @@ http://localhost:8080
 - Dockeriser l'application
 - Créer un Docker Compose pour lancer l'application
   - `docker compose up`
+
+Bonus :
+
 - Utiliser les [profiles](https://docs.docker.com/compose/profiles/) pour activer/désactiver les outils APM
 
 ### Instrumentation
@@ -65,7 +68,7 @@ Instrumenter l'application en justifiant vos choix d'outils
 
 Visualiser les logs de tous les containers (application + outils APM) dans Kibana.
 
-Bonus:
+Bonus :
 
 - Gérer les stacktraces qui sont sur plusieurs lignes (regrouper la stacktrace en un seul record)
 
@@ -95,16 +98,16 @@ Bonus :
 
 ## Evaluation
 
-|                           | Critères de base (-0.5/critère)                              | Critères complémentaires (+0.25/critère)                                                          |
-| ------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
-| Rendu                     | <ul><li>Le rendu est complet et dans les temps</li></ul>     |                                                                                                   |
-| Docker                    | <ul><li>Le Docker Compose est fonctionnel</li></ul>          | <ul><li>Bonne dockerisation</li><li>Utilisation des profiles</li></ul>                            |
-| Logs                      | <ul><li>Visualisation des logs dans Kibana</li></ul>         | <ul><li>Stacktraces regroupées</li><li>Dashboard</li></ul>                                        |
-| Métriques                 | <ul><li>Visualisation des métriques dans Grafana</li></ul>   | <ul><li>Gauge</li><li>Sums</li><li>Autre</li></ul>                                                |
-| Traces                    | <ul><li>Visualisation des traces dans Jaeger</li></ul>       | <ul><li>Visualisation des traces dans Zipkin</li><li>Comparaison avec Zipkin</li></ul>            |
-| Documentation (README.md) | <ul><li>Documentation des configurations manuelles</li></ul> | <ul><li>Bonne documentation de l'application</li><li>Bonne documentation des APM</li></ul>        |
-| Rapport                   |                                                              | <ul><li>Bonne explication de la démarche</li><li>Bonne explication des choix techniques</li></ul> |
-| Bonus                     |                                                              | <ul><li>Autre bonus</li></ul>                                                                     |
+|                           | Critères de base (-0.5/critère)                                             | Critères complémentaires (+0.2/critère)                                                                                              |
+| ------------------------- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| Rendu                     | <ul><li>Le rendu est complet et dans les temps</li></ul>                    |                                                                                                                                      |
+| Docker                    | <ul><li>Le Docker Compose est fonctionnel</li></ul>                         | <ul><li>Bonne dockerisation</li><li>Utilisation des profiles</li></ul>                                                               |
+| Logs                      | <ul><li>Visualisation des logs de l'application dans Kibana</li></ul>       | <ul><li>Ajout des logs de tous les services</li><li>Stacktraces regroupées</li><li>Dashboard</li></ul>                               |
+| Métriques                 | <ul><li>Visualisation des métriques de l'application dans Grafana</li></ul> | <ul><li>Ajout des métriques de tous les services</li><li>Gauge</li><li>Sums</li><li>Autre</li></ul>                                  |
+| Traces                    | <ul><li>Visualisation des traces de l'application dans Jaeger</li></ul>     | <ul><li>Ajout des traces de tous les services</li><li>Visualisation des traces dans Zipkin</li><li>Comparaison avec Zipkin</li></ul> |
+| Documentation (README.md) | <ul><li>Documentation des configurations manuelles</li></ul>                | <ul><li>Bonne documentation de l'application</li><li>Bonne documentation des APM</li></ul>                                           |
+| Rapport                   |                                                                             | <ul><li>Bonne explication de la démarche</li><li>Bonne explication des choix techniques</li></ul>                                    |
+| Bonus                     |                                                                             | <ul><li>Autre bonus</li></ul>                                                                                                        |
 
 Tous les critères de base doivent être validés pour avoir la note de 4.
 
