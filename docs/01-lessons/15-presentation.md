@@ -9,7 +9,10 @@
 - Database as Code : versionner sa base de données
   - Flyway & Liquibase
   - Alembic (SQLAlchemy)
-- GitHub Actions vs GitLab CI/CD
+- Comparaison CI/CD
+  - GitHub Actions
+  - GitLab CI/CD
+  - Jenkins
 - Comparaison des providers Git
   - BitBucket
   - GitHub
@@ -28,8 +31,8 @@ Vous pouvez aussi proposer un sujet de votre choix.
 
 ## Déroulement
 
-- 10 minutes de présentation
-- 10 minutes de questions
+- 10-15 minutes de présentation
+- 5-10 minutes de questions
 
 ## Évaluation
 
@@ -50,3 +53,10 @@ Vous serez évalué sur les critères suivants :
 Un support visuel n'est pas obligatoire tant qu'il n'est pas nécessaire pour mieux vous suivre.
 
 Une démonstration et/ou une mise en pratique sont les bienvenues.
+
+### Critères
+
+|       | Critères de base <br/> (-0.5/critère)                                       | Critères complémentaires <br/> (+0.25/critère)                                                                                                                                              |
+| ----- | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Fond  | <ul><li>Recherche sur le sujet</li><li>Compréhension du sujet</li></ul>     | <ul><li>Explications pertinentes</li><li>Lien avec le cours explicité</li><li>Démonstration (preuve)</li><li>Réponses pertinentes</li></ul>                                                 |
+| Forme | <ul><li>Respect du temps</li><li>Indication des sources utilisées</li></ul> | <ul><li>Bonne attractivité (facile à suivre)</li><li>Bonne didactisation (facile à comprendre)</li><li>Bonne structuration (fil conducteur)</li><li>Bon support (visuel ou autre)</li></ul> |
